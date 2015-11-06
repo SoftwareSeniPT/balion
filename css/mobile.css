@@ -43,6 +43,7 @@
     }
     #hero h2 {
         font-size: 35px;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
     }
     #hero .slideshow {
         height: 450px;
@@ -53,9 +54,13 @@
     #content .welcome {
         text-align: left;
         font-size: 15px;
+        line-height: 1.6;
     }
     #content .welcome h3 {
         margin: 0;
+    }
+    #content .welcome p {
+        margin: 15px 0;
     }
     #content .grid-villas h3 {
         margin-top: 0;
@@ -69,9 +74,9 @@
         margin-bottom: 20px;
     }
     footer .outer {
-    	padding-bottom: 30px;
+        padding-bottom: 30px;
     }
     header .submenu {
-    	top: 31px;
+        top: 31px;
     }
 }
