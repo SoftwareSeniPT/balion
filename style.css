@@ -414,7 +414,9 @@ header {
 }
 
 #content .grid-villas .image:hover .background {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 #content .grid-villas .text {
@@ -615,5 +617,7 @@ footer .iframe-wrapper iframe {
 
 #content .grid-villas .background {
     -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
     transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
