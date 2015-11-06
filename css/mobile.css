@@ -1,0 +1,77 @@
+/* Smaller than tablet */
+
+@media (max-width: 780px) {
+    body {
+        padding-bottom: 0;
+    }
+    #hero .slideshow .slide {
+        padding-top: 270px;
+    }
+    footer .outer {
+        border: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: block;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    header #navbar > li {
+        padding: 5px 10px;
+    }
+    header .top-menu {
+        text-align: left;
+    }
+    header .outer {
+        white-space: nowrap;
+    }
+    header .lang,
+    header .currency {
+        margin-right: 5px;
+    }
+    #hero .slideshow .slide {
+        padding-top: 0px;
+    }
+    #hero .form-member {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #hero h2 {
+        font-size: 35px;
+    }
+    #hero .slideshow {
+        height: 450px;
+    }
+    #content .welcome h3 {
+        font-size: 35px;
+    }
+    #content .welcome {
+        text-align: left;
+        font-size: 15px;
+    }
+    #content .welcome h3 {
+        margin: 0;
+    }
+    #content .grid-villas h3 {
+        margin-top: 0;
+        font-size: 30px;
+    }
+    #content .grid-villas .item {
+        width: 100%;
+    }
+    footer .grid {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer .outer {
+    	padding-bottom: 30px;
+    }
+    header .submenu {
+    	top: 31px;
+    }
+}

@@ -3,14 +3,6 @@ var app = {
         app.dropDownInit();
         app.homeCycleInit();
     },
-    homeCycleInit: function() {
-        jQuery('.slideshow').cycle({
-            speed: 1000,
-            slides: '.slide',
-            timeout: 3000,
-            fx: 'scrollHorz'
-        });
-    },
     dropDownInit: function() {
         jQuery('.dropdown').click(function(){
             jQuery('.dropdown').not(this).removeClass('opened');
