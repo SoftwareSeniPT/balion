@@ -319,6 +319,8 @@ header {
     padding: 10px;
     border: 2px solid #BCBCBC;
     outline: 0;
+    background: #fff;
+    border-radius: 0;
 }
 
 #hero .form-member > input[type=text]:focus {
