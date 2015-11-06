@@ -1,13 +1,31 @@
 var app = {
     init: function() {
-        // Size things
-        app.setWinSize();
+        app.dropDownInit();
+        app.homeCycleInit();
     },
+    homeCycleInit: function() {
+        jQuery('.slideshow').cycle({
+            speed: 1000,
+            slides: '.slide',
+            timeout: 3000,
+            fx: 'scrollHorz'
+        });
+    },
+    dropDownInit: function() {
+        jQuery('.dropdown').click(function(){
+            jQuery('.dropdown').not(this).removeClass('opened');
+            if(!jQuery(this).hasClass('opened')) {
+                jQuery(this).addClass('opened')
+            } else {
+                jQuery(this).removeClass('opened')
+            }
+        });
 
-    setWinSize: function({
-        // Set window size
-        app.winHeight = jQuery(window).height();
-        app.winWidth = jQuery(window).width();
+        // If dropdown clicked
+        jQuery('.dropdown li').click(function(){
+            var $val = jQuery(this).text();
+            jQuery(this).parents('.dropdown').find('span').text($val);
+        });
     }
 };
 
