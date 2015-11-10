@@ -79,4 +79,21 @@
     header .submenu {
         top: 31px;
     }
+    header #navbar {
+        font-size: 14px;
+    }
+    /* Search */
+    .search-header .outer {
+        text-align: center;
+    }
+    .search-header .title,
+    .search-header .sort {
+        display: inline-block;
+    }
+    .search-header .sort {
+        text-align: left;
+    }
+    .search-header .title {
+        font-size: 25px;
+    }
 }

@@ -233,10 +233,6 @@ header #navbar > li:hover ul {
     display: block;
 }
 
-header #navbar {
-    font-size: 14px;
-}
-
 header .submenu {
     position: absolute;
     top: 36px;
@@ -415,8 +411,8 @@ header {
 
 #content .grid-villas .image:hover .background {
     -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #content .grid-villas .text {
@@ -427,23 +423,38 @@ header {
     border-top: 0;
 }
 
+#content.home .features,
+#content.search .features {
+    margin-left: -2px;
+    margin-right: -2px;
+    width: 50%;
+}
+
+#content.home .features li,
+#content.search .features li {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 #content .features {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 #content .features li {
     list-style: none;
     float: left;
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #content .icon {
-    width: 24px;
-    height: 24px;
-    background: #1e3a21;
-    display: inline-block;
-    margin-right: 5px;
+    padding-bottom: 100%;
+    display: block;
     border-radius: 4px;
     position: relative;
 }
@@ -454,25 +465,25 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(./images/icon-sprite.png);
+    background: url(./images/icon-beach.svg);
     content: '';
-    background-position: -2px -2px;
+    background-size: cover;
 }
 
 #content .icon-car:before {
-    background-position: -32px -2px;
+    background: url(./images/icon-car.svg);
 }
 
 #content .icon-kitchen:before {
-    background-position: -62px -2px;
+    background: url(./images/icon-dinner.svg);
 }
 
 #content .icon-swimming:before {
-    background-position: -90px -2px;
+    background: url(./images/icon-swimming.svg);
 }
 
 #content .icon-people:before {
-    background-position: -122px -2px;
+    background: url(./images/icon-user.svg);
 }
 
 #content h4 {
@@ -610,6 +621,253 @@ footer .iframe-wrapper iframe {
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+
+/* Search page */
+
+.search-page .form-inquiry,
+.search-page .search-header,
+.search-page .pagination {
+    background: #eaf6ec;
+}
+
+.search-page #hero .form-inquiry {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    padding-top: 50px;
+}
+
+.search-page #hero .form-inquiry .outer {
+    background-color: rgba(255, 255, 255, 0.38);
+}
+
+.search-page #content .grid-villas {
+    padding-bottom: 0;
+}
+
+.search-header .outer {
+    display: table;
+    width: 100%;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.search-header .outer:after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background: #8A9D8C;
+}
+
+.search-header {
+    font-family: 'Gentium Basic', serif;
+}
+
+.search-header .title {
+    font-size: 35px;
+    color: #152d18;
+}
+
+.search-header .title,
+.search-header .sort {
+    display: table-cell;
+}
+
+.search-header .sort {
+    text-align: right;
+    font-size: 18px;
+}
+
+.search-header .sort select {
+    height: 38px;
+    background: transparent;
+    border: 2px solid #90A293;
+    border-radius: 0;
+    color: #333;
+    margin-left: 10px;
+    padding: 0 10px;
+}
+
+.pagination {
+    text-align: right;
+    position: relative;
+}
+
+.pagination .outer {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.pagination .outer:after {
+    position: absolute;
+    top: 0;
+    content: "";
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background: #8A9D8C;
+}
+
+.pagination .pagi-item {
+    display: inline-block;
+    height: 30px;
+    border: 1px solid #1E3A21;
+    background: #fff;
+    padding: 2px 6px;
+    font-size: 16px;
+    color: #333;
+    margin-right: 1px;
+}
+
+.pagination .active,
+.pagination .pagi-item:hover {
+    background: #169f25;
+    color: #fff;
+}
+
+#ui-datepicker-div {
+    z-index: 200 !important;
+}
+
+
+/* Details page */
+
+.details .description .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+}
+
+.details .description .desc,
+.details .description .info {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    min-height: 1px;
+}
+
+.details .description .desc {
+    width: 70%;
+    font-size: 18px;
+    color: #565656;
+}
+
+.details .description .info {
+    width: 30%;
+}
+
+.details .map {
+    min-height: 400px;
+    position: relative;
+}
+
+.details #map {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.details .details-wrapper > div {
+    display: none;
+}
+
+.details .details-wrapper table tr td:first-child {
+    font-weight: bold;
+    padding-right: 20px;
+    vertical-align: top;
+    min-width: 150px;
+}
+
+.details .villa-details {
+    background: #EAF6EC
+}
+
+.details .details-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    border-bottom: 1px solid #A0A0A0
+}
+
+.details .description h2 {
+    color: #169f25;
+    font-size: 45px;
+    border-bottom: 1px solid #9C9C9C;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.details .description {
+    padding: 30px 0;
+}
+
+.details .description h2 span {
+    font-weight: 300;
+    font-size: 35px;
+    color: #626262;
+}
+
+.details .details-menu li {
+    float: left;
+}
+
+.details .details-menu li > a {
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    padding: 40px 60px 20px 0;
+    color: #6D6D6D;
+}
+
+.details .details-menu .selected > a {
+    color: #159F25;
+}
+
+.details .details-wrapper > div:first-child {
+    display: block;
+}
+
+.details .info-wrapper {
+    background: #E9EBE8;
+    padding: 20px;
+}
+
+.details .info-wrapper .btn {
+    display: block;
+    height: 41px;
+    padding: 11px 15px;
+    text-align: center;
+}
+
+.details .info-wrapper .price h3 {
+    color: #169f25;
+}
+
+.details .info-wrapper .price h3 {
+    color: #169f25;
+    font-size: 34px;
+}
+
+.details .info-wrapper .price {
+    padding: 10px 0;
+    border-top: 1px solid #B9B9B9;
+    border-bottom: 1px solid #B9B9B9;
+    margin: 15px 0;
+}
+
+.details .details-wrapper {
+    padding: 20px 0 40px 0;
+    color: #7A7A7A;
 }
 
 

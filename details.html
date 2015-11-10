@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0," />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./icon-touch.png" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="./css/datepicker.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+
+    <!-- Google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <title>BaliOn</title>
+</head>
+
+<body class="details-page">
+    <header>
+        <div class="top-menu">
+            <div class="outer">
+                <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
+                <div class="lang dropdown inline">
+                    <span>US English</span>
+                    <ul>
+                        <li>US English</li>
+                        <li>Bahasa</li>
+                    </ul>
+                </div>
+                <div class="currency dropdown inline">
+                    <span>USD</span>
+                    <ul>
+                        <li>USD</li>
+                        <li>IDR</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-login inline">Login</a>
+            </div>
+        </div>
+        <!-- Navigation bar -->
+        <div class="navbar-wrapper">
+            <ul id="navbar">
+                <li>
+                    <a href="#">Villas</a>
+                    <ul class="submenu">
+                        <li><a href="#">Our Thinking & Values</a></li>
+                        <li><a href="#">The Balion's Experience</a></li>
+                        <li><a href="#">The Balion Team</a></li>
+                        <li><a href="#">Balion in Press</a></li>
+                        <li><a href="#">Balion's Newsletter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Bali Guide</a></li>
+                <li><a href="#">Villa Management</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- // Navigation bar -->
+    </header>
+    <div id="hero">
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide" style="background-image: url(./images/hero-1.jpg)"></div>
+            <div class="slide" style="background-image: url(./images/hero-2.jpg)"></div>
+        </div>
+    </div>
+    <div id="content" class="details">
+        <section class="description">
+            <div class="outer">
+                <h2>Villa Ambra <span>| Pantai Lima</span></h2>
+                <div class="row">
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nam minus vitae exercitationem, non doloribus. Velit natus ipsa nobis explicabo cupiditate obcaecati, suscipit tempore harum ratione unde, et enim? Sunt neque id ipsa cumque iure molestias aliquam, quam itaque voluptatibus eligendi est, porro illo dolor cupiditate mollitia nulla ab vero ut quaerat omnis, similique inventore a quidem optio! Velit laboriosam necessitatibus quasi similique veritatis, vero molestias neque sunt inventore consequuntur nemo eaque esse sit, fugiat, ratione. Recusandae molestiae, iusto repellat quos alias architecto illum minus, optio laudantium consequuntur vel voluptatem. Hic molestias modi ipsam, sapiente. Officiis sapiente, aliquam accusantium quis!</div>
+                    <div class="info">
+                        <div class="info-wrapper">
+                            <ul class="features">
+                                <li><i class="icon icon-beach"></i></li>
+                                <li><i class="icon icon-car"></i></li>
+                                <li><i class="icon icon-kitchen"></i></li>
+                                <li><i class="icon icon-swimming"></i></li>
+                                <li><i class="icon icon-people"></i></li>
+                            </ul>
+                            <div class="price">
+                                <span>Starting Price</span>
+                                <h3>USD 1295</h3>
+                            </div>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div id="map"></div>
+        </section>
+        <section class="villa-details">
+            <div class="outer">
+                <ul class="details-menu">
+                    <li class="selected"><a href="#" data-target="#villa-info">Villa Info</a></li>
+                    <li><a href="#" data-target="#fact">Fact</a></li>
+                    <li><a href="#" data-target="#sheet">Sheet</a></li>
+                    <li><a href="#" data-target="#gallery">Gallery</a></li>
+                    <li><a href="#" data-target="#calendar">Calendar</a></li>
+                    <li><a href="#" data-target="#guestbook">Guestbook</a></li>
+                    <li><a href="#" data-target="#rates">Rates</a></li>
+                </ul>
+                <div class="details-wrapper">
+                    <div id="villa-info">
+                        <table>
+                            <tr>
+                                <td>Built In</td>
+                                <td>2008</td>
+                            </tr>
+                            <tr>
+                                <td>Bedrooms</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Surrounding</td>
+                                <td>Beachfront</td>
+                            </tr>
+                            <tr>
+                                <td>Swimming Pool</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, delectus?</td>
+                            </tr>
+                            <tr>
+                                <td>Distance Airport</td>
+                                <td>Dolor sit amet, consectetur adipisicing elit. Dolorum, delectus?</td>
+                            </tr>
+                            <tr>
+                                <td>Distance Beach</td>
+                                <td>On the beach</td>
+                            </tr>
+                            <tr>
+                                <td>Technical Info</td>
+                                <td>Dolor sit amet, consectetur adipisicing elit. Dolorum, delectus?</td>
+                            </tr>
+                            <tr>
+                                <td>Staffing</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, delectus?</td>
+                            </tr>
+                            <tr>
+                                <td>Other Info</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum deleniti quisquam eligendi ratione doloremque, dolorem eos asperiores? Corporis consequuntur dolor ipsam, id culpa consequatur repellat architecto? Temporibus voluptates, incidunt totam cum labore saepe sed reiciendis perferendis accusamus magnam distinctio adipisci enim, ipsam reprehenderit. Nesciunt, veniam quisquam, dolorum aliquid dolore beatae.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="fact">
+                        Aperiam maiores excepturi, dolore repellat, consectetur tempore omnis aliquam eveniet iure, magni modi nam iusto corrupti, voluptatibus fugiat non quisquam tenetur ipsa. Culpa atque harum consectetur autem, vel, ipsam consequatur non ratione dolorem officia at nulla deserunt itaque possimus velit explicabo, ipsa enim distinctio fuga? Reiciendis quasi, vitae explicabo!
+                    </div>
+                    <div id="sheet">
+                        Blanditiis aliquid id ea aperiam magnam exercitationem animi. Rem voluptas porro ratione at dolor, fugiat quae provident deserunt maiores molestias optio accusantium unde amet, aspernatur blanditiis obcaecati nisi voluptatibus culpa earum ipsum voluptatem illum! Ipsam quam vel magnam hic provident, praesentium doloribus voluptates, commodi ullam earum ea facilis libero dolorum eum dolores similique reiciendis fugiat, deleniti ab possimus itaque eveniet explicabo delectus non! Quo asperiores sunt beatae optio. Nulla accusamus quis quo, amet sint cumque aliquid officiis vel aliquam officia illo ratione doloremque odit. Aliquam amet eligendi qui.
+                    </div>
+                    <div id="gallery">
+                        Praesentium doloribus voluptates, commodi ullam earum ea facilis libero dolorum eum dolores similique reiciendis fugiat, deleniti ab possimus itaque eveniet explicabo delectus non! Quo asperiores sunt beatae optio. Nulla accusamus quis quo, amet sint cumque aliquid officiis vel aliquam officia illo ratione doloremque odit. Aliquam amet eligendi qui.
+                    </div>
+                    <div id="calendar">
+                        Ipsam quam vel magnam hic provident, praesentium doloribus voluptates, commodi ullam earum ea facilis libero dolorum eum dolores similique reiciendis fugiat, deleniti ab possimus itaque eveniet explicabo delectus non! Quo asperiores sunt beatae optio. Nulla accusamus quis quo, amet sint cumque aliquid officiis vel aliquam officia illo ratione doloremque odit. Aliquam amet eligendi qui.
+                    </div>
+                    <div id="guestbook">
+                        Raesentium doloribus voluptates, commodi ullam earum ea facilis libero dolorum eum dolores similique reiciendis fugiat, deleniti ab possimus itaque eveniet explicabo delectus non! Quo asperiores sunt beatae optio. Nulla accusamus quis quo, amet sint cumque aliquid officiis vel aliquam officia illo ratione doloremque odit. Aliquam amet eligendi qui.
+                    </div>
+                    <div id="rates">
+                        Ipsam quam vel magnam hic provident, praesentium doloribus voluptates, commodi ullam earum ea facilis libero dolorum eum dolores similique reiciendis fugiat, deleniti ab possimus itaque eveniet explicabo delectus non! Quo asperiores sunt beatae optio. Nulla accusamus quis quo, amet sint cumque aliquid officiis vel aliquam officia illo ratione doloremque odit. Aliquam amet eligendi qui.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="outer">
+            <div class="row">
+                <div class="grid facebook-update">
+                    <h3>Our Latest Update</h3>
+                    <ul>
+                        <li>Villa Valentine - Stunning 5 bedroom Family villa. From USD $595 per night for 10 people - that works out to USD$59 per person per night!</li>
+                        <li>Experience Villa Eden - Seminyak, Bali - http://modo.ly/1M9BFMF From USD$345 per night for 6 people For more details - se <a href="#">http://modo.ly/1GYiJ2f</a></li>
+                    </ul>
+                </div>
+                <div class="grid">
+                    <h3>Our Latest Video</h3>
+                    <div class="iframe-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/n4L_SyU6Brc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="grid">
+                    <h3>Newsletter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                    <form action="#">
+                        <input type="text" placeholder="Your Email Address">
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Script -->
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/datepicker-settings.js"></script>
+    <script src="./js/jquery.cycle2.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
