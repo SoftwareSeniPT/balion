@@ -2,6 +2,7 @@ var app = {
     init: function() {
         app.dropDownInit();
         app.detailsCycleInit();
+        app.accordionChanger();
         app.initMap();
     },
     dropDownInit: function() {
@@ -21,12 +22,40 @@ var app = {
         });
     },
     detailsCycleInit: function() {
-        jQuery('.details-page .slideshow').cycle({
+        var $cycle = jQuery('.details-page .slideshow');
+
+        $cycle.cycle({
             manualSpeed: 500,
             slides: '.slide',
-            timeout: 1500,
-            fx: 'scrollHorz'
+            timeout: 0,
+            fx: 'scrollHorz',
+            next: '.next',
+            prev: '.prev'
         });
+
+        jQuery(document).keyup(function(event) {
+            // Stop auto slideshow
+            $cycle.cycle('pause');
+
+            if (event.keyCode == 38 || event.keyCode == 37) {
+                $cycle.cycle('prev');
+            } else if (event.keyCode == 40 || event.keyCode == 39) {
+                $cycle.cycle('next');
+            }
+        });
+    },
+    accordionChanger: function() {
+        jQuery('.details .details-menu li > a').click(function(event){
+             jQuery('.details .details-menu li').removeClass('selected');
+
+             jQuery(this).parent().addClass('selected');
+
+            var target = jQuery(this).data('target');
+            jQuery('.details .details-wrapper > div').hide();
+            jQuery(target).fadeIn();
+
+            event.preventDefault()
+        })
     },
     initMap: function() {
         if(!jQuery('#content').hasClass('details')) {
@@ -53,7 +82,7 @@ var app = {
                 position: lang,
                 map: map,
                 title: 'Hiriketiya Beachhouse',
-                icon: 'http://www.beachhousehiriketiya.com/wp-content/themes/hybrid/assets/images/pin.png'
+                icon: 'http://i.imgur.com/ynCiQGj.png'
             });
         }
 

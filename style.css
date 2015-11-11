@@ -255,7 +255,7 @@ header .submenu li:hover {
 
 header {
     position: relative;
-    z-index: 100;
+    z-index: 110;
 }
 
 #hero {
@@ -335,6 +335,24 @@ header {
 
 #hero .location {
     width: 30%;
+}
+
+.browse {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50px;
+    cursor: pointer;
+
+}
+
+.browse img {
+    max-width: 30px;
+}
+
+.browse.next {
+    left: auto;
+    right: 50px;
 }
 
 #content .welcome {
@@ -761,6 +779,7 @@ footer .iframe-wrapper iframe {
 
 .details .description .info {
     width: 30%;
+    float: right;
 }
 
 .details .map {
@@ -830,6 +849,14 @@ footer .iframe-wrapper iframe {
 }
 
 .details .details-menu .selected > a {
+    color: #159F25;
+}
+
+.details .details-menu:hover li > a {
+    color: #6D6D6D;
+}
+
+.details .details-menu:hover li > a:hover {
     color: #159F25;
 }
 
