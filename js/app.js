@@ -5,6 +5,7 @@ var app = {
         app.accordionChanger();
         app.initMap();
         app.multiSelectInit();
+        app.refineSearchReveal();
     },
     dropDownInit: function() {
         jQuery('.dropdown').click(function() {
@@ -20,6 +21,17 @@ var app = {
         jQuery('.dropdown li').click(function() {
             var $val = jQuery(this).text();
             jQuery(this).parents('.dropdown').find('span').text($val);
+        });
+    },
+    refineSearchReveal: function() {
+        jQuery('#content .refine-search h4').click(function(){
+            if(!jQuery(this).hasClass('revealed')) {
+                jQuery(this).addClass('revealed');
+                jQuery(this).next().slideDown();
+            } else {
+                jQuery(this).removeClass('revealed');
+                jQuery(this).next().slideUp();
+            }
         });
     },
     multiSelectInit: function() {
