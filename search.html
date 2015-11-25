@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="./css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="./css/multiple-select.css" />
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
     <title>BaliOn</title>
@@ -91,6 +92,51 @@
         </div>
     </div>
     <div id="content" class="search">
+        <section class="refine-search">
+            <div class="outer">
+                <h4>Refine Search</h4>
+                <div class="row">
+                    <div class="search-item">
+                        <label for="bedroom">Bedrooms</label>
+                        <select name="bedroom" id="bedroom" multiple="multiple">
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedrooms</option>
+                            <option value="3">3 Bedrooms</option>
+                            <option value="4">4 Bedrooms</option>
+                            <option value="5">5 Bedrooms</option>
+                        </select>
+                    </div>
+                    <div class="search-item">
+                        <label for="location">Location</label>
+                        <select name="location" id="location" multiple="multiple">
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedrooms</option>
+                            <option value="3">3 Bedrooms</option>
+                            <option value="4">4 Bedrooms</option>
+                            <option value="5">5 Bedrooms</option>
+                        </select>
+                    </div>
+                    <div class="search-item">
+                        <label for="experience">Experience</label>
+                        <select name="experience" id="experience" multiple="multiple">
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedrooms</option>
+                            <option value="3">3 Bedrooms</option>
+                            <option value="4">4 Bedrooms</option>
+                            <option value="5">5 Bedrooms</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="description">
+            <div class="outer">
+                <h4>Pantai Lima</h4>
+                <p>Pantai Lima is an exclusive estate of luxury villas approached through 4 km of rice fields and built right on the beachfront at Pererenan</p>
+            </div>
+        </section>
+
         <section class="search-header">
             <div class="outer">
                 <div class="title">Search Result 82</div>
@@ -304,6 +350,7 @@
     <script src="./js/jquery-ui.js"></script>
     <script src="./js/datepicker-settings.js"></script>
     <script src="./js/jquery.cycle2.min.js"></script>
+    <script src="./js/multiple-select.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

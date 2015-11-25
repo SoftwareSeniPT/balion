@@ -4,6 +4,7 @@ var app = {
         app.detailsCycleInit();
         app.accordionChanger();
         app.initMap();
+        app.multiSelectInit();
     },
     dropDownInit: function() {
         jQuery('.dropdown').click(function() {
@@ -19,6 +20,12 @@ var app = {
         jQuery('.dropdown li').click(function() {
             var $val = jQuery(this).text();
             jQuery(this).parents('.dropdown').find('span').text($val);
+        });
+    },
+    multiSelectInit: function() {
+        jQuery('.refine-search select').multipleSelect({
+            placeholder: "Please select",
+            width: '100%'
         });
     },
     detailsCycleInit: function() {
