@@ -220,12 +220,12 @@ header #navbar > li:hover {
     background: #115118;
 }
 
-header .submenu a {
+header .sub-menu a {
     padding: 10px 20px;
     display: inline-block;
 }
 
-header #navbar .submenu {
+header #navbar .sub-menu {
     display: none
 }
 
@@ -233,7 +233,7 @@ header #navbar > li:hover ul {
     display: block;
 }
 
-header .submenu {
+header .sub-menu {
     position: absolute;
     top: 36px;
     left: 0;
@@ -244,12 +244,12 @@ header .submenu {
     z-index: 100;
 }
 
-header .submenu li {
+header .sub-menu li {
     border-bottom: 1px solid #1A2C1C;
     text-align: left;
 }
 
-header .submenu li:hover {
+header .sub-menu li:hover {
     background: #115118;
 }
 
@@ -623,7 +623,6 @@ header {
     font-size: 16px;
     line-height: 1.3;
     color: #142216;
-    margin-bottom: 15px;
 }
 
 footer {
