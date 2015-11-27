@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
     <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="./css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="./css/lightslider.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/multiple-select.css" />
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
     <!-- Google maps -->
@@ -62,12 +64,28 @@
         </div>
         <!-- // Navigation bar -->
     </header>
+
+    <!-- Hero -->
     <div id="hero">
+        <div class="hero-background" style="background-image: url(./images/hero-1.jpg)"></div>
+    </div>
+
+    <div id="slideshow">
         <!-- Slideshow -->
-        <div class="slideshow">
-            <div class="slide" style="background-image: url(./images/hero-1.jpg)"></div>
-            <div class="slide" style="background-image: url(./images/hero-2.jpg)"></div>
+        <div class="images">
+            <div class="slide" style="background-image: url(./images/hero-1.jpg)">
+                <img src="./images/hero-1.jpg" />
+            </div>
+            <div class="slide" src="./images/hero-2.jpg" style="background-image: url(./images/hero-2.jpg)">
+                <img src="./images/hero-2.jpg" />
+            </div>
         </div>
+        
+        <!-- Pager -->
+        <div id=adv-custom-pager class="center external">
+            <span class="thumbnail-button">Thumbnails</span>
+        </div>
+
         <!-- Arrow -->
         <span class="browse prev">
             <img src="./images/caret-left.png" alt="">
@@ -75,7 +93,14 @@
         <span class="browse next">
             <img src="./images/caret-right.png" alt="">
         </span>
+        <span class="close">
+            <img src="./images/close.png" alt="">
+        </span>
+        <span class="page-count">
+            <span class="current">6</span>/<span class="total">8</span>
+        </span>
     </div>
+
     <div id="content" class="details">
         <section class="description">
             <div class="outer">
@@ -210,6 +235,8 @@
     <script src="./js/jquery-ui.js"></script>
     <script src="./js/datepicker-settings.js"></script>
     <script src="./js/jquery.cycle2.min.js"></script>
+    <script src="./js/multiple-select.js"></script>
+    <script src="./js/lightslider.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
