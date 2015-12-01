@@ -173,6 +173,7 @@ header .opened ul {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
+    transition: background 0.2s ease;
 }
 
 .btn:hover {
@@ -351,13 +352,12 @@ header {
     padding: 12px 3px;
 }
 
-#hero {
-    position: relative;
+.details-page #hero {
     padding-top: 330px;
 }
 
-.home #hero {
-    padding-top: 0;
+#hero {
+    position: relative;
 }
 
 #hero .hero-background {
@@ -661,6 +661,51 @@ header {
     font-size: 16px;
 }
 
+/* Search param */
+.search-param {
+    padding-top: 30px;
+    padding-bottom: 21px;
+    transition: padding-bottom 0.5s ease;
+}
+
+.search-param.revealed {
+    padding-bottom: 0;
+}
+
+.search-param .wrapper {
+    display: table;
+    width: 100%;
+    background: #fff;
+    padding: 6px 10px;
+    font-size: 15px;
+    color: #1E3A21;
+    border-top: 2px solid #E5E5E5;}
+
+.search-param .wrapper > * {
+    display: table-cell;
+    vertical-align: middle;
+}  
+
+.search-param .name {
+    font-size: 35px;
+}
+
+.search-param .button {
+    font-size: 13px;
+    text-align: right;
+}
+
+.search-param .button .btn {
+    padding: 10px 20px;
+}
+
+.search-param .stay-date span {
+    font-style: italic;
+}
+
+.search-param-trigger {
+    display: none
+}
 
 /* Refine search */
 
@@ -668,16 +713,15 @@ header {
     display: inline-block;
     font-size: 14px;
     width: 33.3%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .refine-search .row {
     margin-left: -10px;
     margin-right: -10px;
     font-size: 0;
-    padding-bottom: 20px;
-    display: none;
+    padding-bottom: 30px;
 }
 
 .refine-search label {
@@ -832,7 +876,7 @@ footer .iframe-wrapper iframe {
 
 .search-page .form-inquiry,
 .search-page .search-header,
-.search-page .pagination {
+.search-page .pagination, .search-param {
     background: #eaf6ec;
 }
 
@@ -841,11 +885,12 @@ footer .iframe-wrapper iframe {
     bottom: auto;
     left: auto;
     right: auto;
-    padding-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 0;
 }
 
 .search-page #hero .form-inquiry .outer {
-    background-color: rgba(255, 255, 255, 0.38);
+    background-color: transparent;
 }
 
 .search-page #content .grid-villas {
@@ -928,6 +973,7 @@ footer .iframe-wrapper iframe {
     font-size: 16px;
     color: #333;
     margin-right: 1px;
+    transition: background 0.2s ease;
 }
 
 .pagination .active,

@@ -72,13 +72,13 @@ var app = {
         })
     },
     refineSearchReveal: function() {
-        jQuery('#content .refine-search h4').click(function() {
-            if (!jQuery(this).hasClass('revealed')) {
-                jQuery(this).addClass('revealed');
-                jQuery(this).next().slideDown();
+        jQuery('.search-param .button .btn').click(function() {
+            if (!jQuery('.search-param').hasClass('revealed')) {
+                jQuery('.search-param').addClass('revealed');
+                jQuery('.search-param').next().slideDown();
             } else {
-                jQuery(this).removeClass('revealed');
-                jQuery(this).next().slideUp();
+                jQuery('.search-param').removeClass('revealed');
+                jQuery('.search-param').next().slideUp();
             }
         });
     },
