@@ -353,7 +353,7 @@ header {
 }
 
 .details-page #hero {
-    padding-top: 500px;
+    padding-top: 450px;
 }
 
 #hero {
@@ -786,15 +786,15 @@ header {
 }
 
 footer {
-    color: #FFFFFF;
-    background: #1E3A21;
+    color: #333;
+    background: #E8EAE8;
+    border-top: 1px solid #E2E2E2;
 }
 
 footer .row {
     margin-left: -15px;
     margin-right: -15px;
     overflow: hidden;
-    border-bottom: 1px solid #172719;
     padding-bottom: 20px;
 }
 
@@ -839,21 +839,21 @@ footer input[type=text] {
 }
 
 footer button:hover {
-    background: #132A16;
+    background: #46C054;
     color: #fff;
 }
 footer button {
-    background: #169f25;
+    background: transparent;
     text-transform: uppercase;
-    height: 34px;
-    padding: 7px 15px;
+    height: 40px;
+    padding: 7px 24px;
     font-weight: bold;
-    color: #fff;
+    color: #46C054;
     cursor: pointer;
     transition: background 0.2s ease;
     outline: 0;
-    border: 0;
-    font-size: 15px;
+    border: 2px solid #46C054;
+    font-size: 14px;
     margin-top: 15px;
 }
 
@@ -864,7 +864,6 @@ footer h3 {
 }
 
 footer a {
-    color: #fff
 }
 
 footer .outer {
