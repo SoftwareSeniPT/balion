@@ -1,8 +1,8 @@
 * {
-    box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
 }
 
 body {
@@ -189,11 +189,28 @@ header .opened ul {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
+    border: 1px solid #169f25;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     transition: background 0.2s ease;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn.white {
+    background: transparent;
+    color: #169F25;
+}
+
+.btn.transparent {
+    background: transparent;
+    color: #169F25;
+    border-color: transparent;
 }
 
 .btn:hover {
     background: #132A16;
+    border-color: #132A16;
     color: #fff;
 }
 
@@ -1260,6 +1277,115 @@ footer .iframe-wrapper iframe {
 .details .details-wrapper {
     padding: 20px 0 40px 0;
     color: #7A7A7A;
+}
+
+
+/* Availabilty */
+
+.availability .heading h3 {
+    font-size: 27px;
+    color: #1E3A21;
+    padding: 10px 0;
+    border-bottom: 1px solid;
+}
+
+.availability .hero-image {
+    margin: 20px 0;
+}
+
+.availability .description {
+    margin-bottom: 15px;
+}
+
+.availability .search-form .firmsdate .wrapper {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.availability .hero-image img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.availability .hero-image .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+#content.availability {
+    padding: 30px 0;
+}
+
+.availability .row {
+    margin-left: -5px;
+    margin-right: -5px;
+    overflow: hidden;
+}
+
+.availability .col {
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.availability .col-100 {
+    width: 100%;
+}
+
+.availability .col-50 {
+    width: 50%;
+}
+
+.availability .hero-image {
+    position: relative;
+}
+
+
+.availability .col-33 {
+    width: 33.3%;
+}
+
+.availability .search-form input[type=text], .availability .search-form select,
+.availability .search-form label {
+    width: 100%;
+}
+
+.availability .search-form label {
+    margin: 4px 0;
+    display: block;
+    color: #7A7A7A;
+    min-height: 21px;
+}
+
+.availability .search-form .firmsdate label {
+    display: inline-block;
+    width: auto;
+}
+
+.availability .search-form > .row {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.availability .search-form > .row > .col {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.availability .search-form input[type=text], .availability .search-form select {
+    border: 1px solid #ddd;
+    outline: 0;
+    height: 35px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    padding: 0 12px;
 }
 
 
