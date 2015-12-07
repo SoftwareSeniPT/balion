@@ -23,12 +23,10 @@
         <div class="top-menu">
             <div class="outer">
                 <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
-                <div class="lang dropdown inline">
-                    <span>US English</span>
-                    <ul>
-                        <li>US English</li>
-                        <li>Bahasa</li>
-                    </ul>
+                <div class="lang inline">
+                    <div><span class="no_translate"><select name="lang" onchange="document.location.href=this.options[this.selectedIndex].value;"><option value="/search" selected="selected">English</option><option value="/id/search">Bahasa Indonesia</option></select><br></span>
+                        <div id="tr_credit"></div>
+                    </div>
                 </div>
                 <div class="currency dropdown inline">
                     <span>USD</span>
@@ -76,7 +74,6 @@
             </div>
         </div>
         <div class="search-param-trigger">
-
             <div class="form-inquiry">
                 <div class="outer">
                     <div class="form-member location">
@@ -129,12 +126,24 @@
                         </div>
                     </div>
                 </div>
-            </section>            
+            </section>
         </div>
     </div>
     <div id="content" class="search">
         <section class="loading">
             <img src="./images/loading.png" alt="Please wait...">
+        </section>
+        <section class="search-header">
+            <div class="outer">
+                <div class="title" id="search-result-total">Search Result 6</div>
+                <div class="sort">
+                    <label for="search_sort">Sort by</label>
+                    <select name="search_sort" id="search-sort">
+                        <option value="0">Price Low to High</option>
+                        <option value="1">Price High to Low</option>
+                    </select>
+                </div>
+            </div>
         </section>
         <section class="grid-villas">
             <div class="outer">

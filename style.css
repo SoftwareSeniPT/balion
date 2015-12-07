@@ -134,6 +134,22 @@ header .currency {
 
 header .lang {
     min-width: 115px;
+    padding: 0;
+    background: transparent;
+}
+
+header .lang select {
+    border: 0;
+    vertical-align: top;
+    outline: 0;
+    background: #132A16;
+    padding: 8px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.21);
+}
+
+header .lang.inline span {
+    opacity: 1;
 }
 
 header .currency {
@@ -789,7 +805,8 @@ header {
 }
 
 .body-on-loading #content .grid-villas,
-.body-on-loading #content .pagination {
+.body-on-loading #content .pagination,
+.body-on-loading #content .search-header {
     display: none;
 }
 

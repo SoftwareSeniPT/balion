@@ -26,12 +26,10 @@
         <div class="top-menu">
             <div class="outer">
                 <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
-                <div class="lang dropdown inline">
-                    <span>US English</span>
-                    <ul>
-                        <li>US English</li>
-                        <li>Bahasa</li>
-                    </ul>
+                <div class="lang inline">
+                    <div><span class="no_translate"><select name="lang" onchange="document.location.href=this.options[this.selectedIndex].value;"><option value="/search" selected="selected">English</option><option value="/id/search">Bahasa Indonesia</option></select><br></span>
+                        <div id="tr_credit"></div>
+                    </div>
                 </div>
                 <div class="currency dropdown inline">
                     <span>USD</span>
