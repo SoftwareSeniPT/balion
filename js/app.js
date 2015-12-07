@@ -10,6 +10,9 @@ var app = {
         app.detailsPageSlideshowTrigger();
         app.detailsPageThumbnailReveal();
     },
+    onResize: function() {
+
+    },
     dropDownInit: function() {
         jQuery('.dropdown').click(function() {
             jQuery('.dropdown').not(this).removeClass('opened');

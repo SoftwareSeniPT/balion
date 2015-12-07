@@ -37,9 +37,14 @@
     #hero .slideshow .slide {
         padding-top: 0px;
     }
-    #hero .form-member {
+    #hero .form-member,
+    .home #hero .outer form > .form-member {
         width: 100%;
         margin-bottom: 5px;
+    }
+    #content .welcome h4 {
+        line-height: 1.5;
+        font-size: 20px;
     }
     #hero h2 {
         font-size: 35px;
@@ -64,7 +69,18 @@
         margin-bottom: 10px;
     }
     #content .welcome h3 {
-        margin: 0;
+        margin-top: 0;
+    }
+    .search-param .button {
+        text-align: left;
+        margin-top: 10px;
+    }
+    .revealed.search-param .button {
+        display: none
+    }
+    .search-param .wrapper > * {
+        display: block;
+        border: 0;
     }
     #content .welcome p {
         margin: 15px 0;
@@ -101,7 +117,42 @@
         text-align: left;
     }
     .search-header .title {
-        font-size: 25px;
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    .availability .hero-image {
+        padding-bottom: 60%;
+    }
+    .availability .rates .wrapper {
+        width: 100%;
+    }
+    .availability .col-100 {
+        width: 100%;
+    }
+    .availability .col-50 {
+        width: 100%
+    }
+    .availability .col-33 {
+        width: 100%
+    }
+    .buttons .btn {
+        margin-bottom: 10px;
+    }
+    .details .gallery-grid .row > a:last-child:after {
+        font-size: 14px;
+    }
+    .browse img {
+        max-width: 10px;
+    }
+    .browse {
+        left: 20px;
+    }
+    .browse.next {
+        right: 20px;
+    }
+    #slideshow .images {
+        left: 50px;
+        right: 50px;
     }
     .details .description .desc,
     .details .description .info {
