@@ -3,13 +3,17 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-586 770 24 24" style="enable-background:new -586 770 24 24;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+	.st0{stroke:#010101;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
 </style>
 <g>
-	<path class="st0" d="M-566,784c0-0.1,0-0.3,0-0.4c0-0.8-0.5-1.5-1.2-1.8v-3.4c0-1.1-0.9-2-2-2h-9.7c-1.1,0-2,0.9-2,2v3.4
-		c-0.7,0.3-1.2,1-1.2,1.8c0,0.1,0,0.3,0,0.4c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h0.4v1.2c0,0.4,0.4,0.8,0.8,0.8
-		c0.4,0,0.8-0.4,0.8-0.8v-1.2h12.1v1.2c0,0.4,0.4,0.8,0.8,0.8c0.4,0,0.8-0.4,0.8-0.8v-1.2h0.4c0.5,0,0.8-0.3,0.8-0.8
-		C-565.2,784.4-565.6,784-566,784z M-574.4,781.6h-5.6V780c0-0.5,0.4-0.8,0.9-0.8h4c0.4,0,0.8,0.3,0.7,0.8V781.6z M-568.1,781.6
-		h-5.6V780c0-0.4,0.4-0.8,0.8-0.8h4c0.5,0,0.8,0.3,0.8,0.8V781.6z"/>
+	<path class="st0" d="M-561,765"/>
+</g>
+<g>
+	<path class="st0" d="M-561,765"/>
+</g>
+<g>
+	<path class="st1" d="M-565,783.2h-16.6V777h-1.5v10.2h1.5v-1.6h15.9v1.6h1.5v-3.2C-564.2,783.6-564.6,783.2-565,783.2z"/>
+	<rect x="-580.9" y="781.5" class="st1" width="2.6" height="1.5"/>
 </g>
 </svg>
