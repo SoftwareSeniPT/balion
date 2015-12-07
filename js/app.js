@@ -27,8 +27,9 @@ var app = {
         });
     },
     detailsPageSlideshowTrigger: function() {
-        jQuery('#hero .hero-background').click(function() {
+        jQuery('#hero .hero-background, .details .gallery-grid .row > a').click(function() {
             jQuery("#slideshow").fadeIn(300);
+            return false;
         });
 
         jQuery('#slideshow .close img').click(function() {
@@ -82,7 +83,7 @@ var app = {
             jQuery('.search-param .button .btn').removeAttr('style');
             jQuery('.search-param').removeClass('revealed');
             jQuery('.search-param').next().slideUp();
-            jQuery('body').addClass('body-on-loading');
+            jQuery('body').addClass('body-on-loading')
         });
     },
     multiSelectInit: function() {
