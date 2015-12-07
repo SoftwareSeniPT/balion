@@ -1384,6 +1384,7 @@ footer .iframe-wrapper iframe {
     display: block;
     color: #7A7A7A;
     min-height: 21px;
+    margin-top: 10px;
 }
 
 .availability .search-form .firmsdate label {
