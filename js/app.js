@@ -50,7 +50,7 @@ var app = {
             captionTemplate: '{{slideNum}} / {{slideCount}}',
             pager: '#adv-custom-pager',
             pagerTemplate: "<a href='#'><img src='{{children.0.src}}' width=60 height=60></a>"
-        }); 
+        });
 
         $cycle.on('cycle-bootstrap', function(e, opts, API) {
             console.log('dsdsd', 'sdsdsds');
@@ -58,13 +58,13 @@ var app = {
             API.customGetImageSrc = function(slideOpts, opts, slideEl) {
                 console.log(slideEl, 'sdsdsds');
             }
-        });        
+        });
 
 
     },
     detailsPageThumbnailReveal: function() {
-        jQuery('#adv-custom-pager .thumbnail-button').click(function(){
-            if(!jQuery('body').hasClass('thumbnail-open')) {
+        jQuery('#adv-custom-pager .thumbnail-button').click(function() {
+            if (!jQuery('body').hasClass('thumbnail-open')) {
                 jQuery('body').addClass('thumbnail-open')
             } else {
                 jQuery('body').removeClass('thumbnail-open')
@@ -73,13 +73,16 @@ var app = {
     },
     refineSearchReveal: function() {
         jQuery('.search-param .button .btn').click(function() {
-            if (!jQuery('.search-param').hasClass('revealed')) {
-                jQuery('.search-param').addClass('revealed');
-                jQuery('.search-param').next().slideDown();
-            } else {
-                jQuery('.search-param').removeClass('revealed');
-                jQuery('.search-param').next().slideUp();
-            }
+            jQuery(this).css({opacity: 0, 'z-index': -100, position: 'relative'});
+            jQuery('.search-param').addClass('revealed');
+            jQuery('.search-param').next().slideDown();
+        });
+
+        jQuery('#hero .form-member button').click(function() {
+            jQuery('.search-param .button .btn').removeAttr('style');
+            jQuery('.search-param').removeClass('revealed');
+            jQuery('.search-param').next().slideUp();
+            jQuery('body').addClass('body-on-loading');
         });
     },
     multiSelectInit: function() {
