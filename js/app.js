@@ -79,7 +79,7 @@ var app = {
             jQuery('.search-param').next().slideDown();
         });
 
-        jQuery('#hero .form-member button').click(function() {
+        jQuery('.button button').click(function() {
             jQuery('.search-param .button .btn').removeAttr('style');
             jQuery('.search-param').removeClass('revealed');
             jQuery('.search-param').next().slideUp();

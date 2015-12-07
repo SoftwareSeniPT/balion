@@ -1120,6 +1120,7 @@ footer .iframe-wrapper iframe {
 .availability .rates table tr:last-child td,
 .availability .rates table tr td:last-child {
     text-align: right;
+    vertical-align: top;
 }
 
 .availability .rates table tr:last-child td {
