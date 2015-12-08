@@ -13,6 +13,20 @@
 }
 
 @media (max-width: 480px) {
+    .custom-page h3, .customer-reviews h3 {
+        font-size: 30px;
+    }
+    .customer-reviews .review-item .image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .customer-reviews .review-item .text {
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+    .customer-reviews .review-item:last-child .text {
+        border: 0;
+    }
     header .logo {
         position: relative;
         top: auto;

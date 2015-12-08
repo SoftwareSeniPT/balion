@@ -1559,15 +1559,87 @@ footer .iframe-wrapper iframe {
     max-width: 680px;
 }
 
-.custom-page h3 {
-    font-size: 48px;
+.custom-page h3,
+.customer-reviews h3 {
+    font-size: 42px;
     font-family: 'Gentium Basic', serif;
     margin: 30px 0;
+    color: #152D18;
+    border-bottom: 1px solid #B4C4B6;
+    padding: 10px 0;
+    ;
 }
 
 .custom-page {
     padding-bottom: 50px;
 }
+
+
+/* customer-reviews */
+
+.customer-reviews .review-item {
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+}
+
+.customer-reviews .review-item .image,
+.customer-reviews .review-item .text {
+    float: left;
+    min-height: 1px;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.customer-reviews .review-item .image img {
+    max-width: 100%;
+    height: auto;
+    padding: 7px;
+    background: #fff;
+    box-shadow: 1px 0px 1px #ccc;
+    -webkit-box-shadow: 1px 0px 1px #ccc;
+    -moz-box-shadow: 1px 0px 1px #ccc;
+    border: 1px solid #ddd;
+}
+
+.customer-reviews .review-item .text {
+    width: 80%;
+    font-size: 16px;
+}
+
+.customer-reviews .rating-icon {
+    background-image: url(./images/star.svg);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    display: inline-block;
+}
+
+.customer-reviews .rating-icon.selected {
+    background-image: url(./images/star-active.svg);
+}
+
+.customer-reviews .rating, .customer-reviews .date {
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: top;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.customer-reviews .review-item .name,
+.customer-reviews .review-item .date {
+    font-weight: 600;
+    font-size: 16px;
+    color: #152D18;
+}
+
+.customer-reviews .review-item .meta p {
+    margin: 10px 0;
+}
+
 
 
 /* Animation */
@@ -2210,17 +2282,23 @@ ul.quicksearch li.button-book .wpcf7-submit {
     max-width: none !important;
 }
 
+
 /* Calendar */
+
 .cm--wrapper * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: none; }
-  .cm--wrapper *:before, .cm--wrapper *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+}
+
+.cm--wrapper *:before,
+.cm--wrapper *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 .cm--wrapper {
     max-width: 730px;
@@ -2231,30 +2309,36 @@ ul.quicksearch li.button-book .wpcf7-submit {
     background-color: #333;
     position: relative;
 }
+
 .cm-navigation-prev {
-  position: absolute;
-  top: 50%;
-  margin-top: -6px;
-  left: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    left: 10px;
 }
+
 .cm-navigation-next {
-  position: absolute;
-  top: 50%;
-  margin-top: -6px;
-  right: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 10px;
 }
-.cm-navigation-prev, .cm-navigation-next {
-  color: #fff;
-  cursor: pointer;
+
+.cm-navigation-prev,
+.cm-navigation-next {
+    color: #fff;
+    cursor: pointer;
 }
+
 .cm--header-month {
-  width: 33.3%;
-  float: left;
-  text-align: center;
-  padding: 14px 0;
-  color: #fff;
-  font-size: 17px;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    padding: 14px 0;
+    color: #fff;
+    font-size: 17px;
 }
+
 .cm--content {
     margin-right: -5px;
     margin-left: -5px;
@@ -2271,41 +2355,52 @@ ul.quicksearch li.button-book .wpcf7-submit {
     padding-left: 5px;
 }
 
-.cm--days.clearfix .cm--day.booked, .cm--days.clearfix .cm--day.booked_by_owner  {
-  background-color: #e33b20;
-  color: #fff;
+.cm--days.clearfix .cm--day.booked,
+.cm--days.clearfix .cm--day.booked_by_owner {
+    background-color: #e33b20;
+    color: #fff;
 }
-.cm--days.clearfix .cm--day.booked .cm--day.on-hold, .cm--days.clearfix .cm--day.booked .cm--day.on_hold {
-  background-color: #F39C12;
-  color: #fff;
+
+.cm--days.clearfix .cm--day.booked .cm--day.on-hold,
+.cm--days.clearfix .cm--day.booked .cm--day.on_hold {
+    background-color: #F39C12;
+    color: #fff;
 }
+
 .legend {
-  font-size: 11px;
-  padding: 10px 21px;
+    font-size: 11px;
+    padding: 10px 21px;
 }
-.cm--day.checkout, .type.booked.checkout:before {
-  background-image: url(../images/check.png);
-  background-position: 31px 0;
+
+.cm--day.checkout,
+.type.booked.checkout:before {
+    background-image: url(../images/check.png);
+    background-position: 31px 0;
 }
+
 .cm--last-month.checkout {
-  background-image: none
+    background-image: none
 }
-.cm--day.checkin, .type.booked.checkin:before {
-  background-image: url(../images/check.png);
-  background-position: 0 0;
+
+.cm--day.checkin,
+.type.booked.checkin:before {
+    background-image: url(../images/check.png);
+    background-position: 0 0;
 }
+
 .cm--last-month.checkin {
-  background-image: none
+    background-image: none
 }
 
 .type.booked.checkout:before {
-  background-position: -21px 0;
-}
-.type.booked.checkin:before {
-  background-position: -54px 0;
+    background-position: -21px 0;
 }
 
-  .legend .type:before {
+.type.booked.checkin:before {
+    background-position: -54px 0;
+}
+
+.legend .type:before {
     content: "";
     height: 10px;
     width: 10px;
@@ -2313,51 +2408,60 @@ ul.quicksearch li.button-book .wpcf7-submit {
     display: inline-block;
     margin-right: 8px;
     vertical-align: middle;
-  }
-  .type.booked:before {
+}
+
+.type.booked:before {
     background-color: #e33b20;
-  }
-  .type.on_hold:before {
+}
+
+.type.on_hold:before {
     background-color: #F39C12;
-  }
-  .type.available:before {
+}
+
+.type.available:before {
     background-color: #26C281;
-  }
+}
+
 .cm--days.clearfix .cm--day.booked .cm--day.available {
-  background-color: #26C281;
-   color: #fff;
+    background-color: #26C281;
+    color: #fff;
 }
+
 #calendar.loading .cm--header {
-  position: relative;
+    position: relative;
 }
+
 #calendar.loading .cm--header:before {
-  position: absolute;
-  top: 0;
-  height: 3px;
-  background-color: #F39C12;
-  left: 0;
-  content: "";
+    position: absolute;
+    top: 0;
+    height: 3px;
+    background-color: #F39C12;
+    left: 0;
+    content: "";
 }
+
 .cm--day {
-  background-color: #26C281;
-  color: #fff;
+    background-color: #26C281;
+    color: #fff;
 }
+
 .cm--days-of-the-week {}
 
-.cm--header-day, .cm--days.clearfix > div {
-  width: 31px;
-  height: 26px;
-  float: left;
-  text-align: center;
-  margin: 1px;
-  color: #676767;
+.cm--header-day,
+.cm--days.clearfix > div {
+    width: 31px;
+    height: 26px;
+    float: left;
+    text-align: center;
+    margin: 1px;
+    color: #676767;
 }
 
 .cm--header-day {
-  padding: 4px 0;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: #545454;
+    padding: 4px 0;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #545454;
 }
 
 .cm--days {}
@@ -2387,16 +2491,17 @@ ul.quicksearch li.button-book .wpcf7-submit {
 
 .clearfix:before,
 .clearfix:after {
-  content: "";
-  display: table;
+    content: "";
+    display: table;
 }
- 
+
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
- 
+
 .clearfix {
-  zoom: 1; /* ie 6/7 */
+    zoom: 1;
+    /* ie 6/7 */
 }
 
 #calendar.loading .cm--header:before {
@@ -2409,9 +2514,10 @@ ul.quicksearch li.button-book .wpcf7-submit {
 
 @keyframes loading {
     0% {
-          width: 0%;
+        width: 0%;
     }
     100% {
-          width: 100%;;
+        width: 100%;
+        ;
     }
 }
