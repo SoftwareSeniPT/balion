@@ -126,7 +126,7 @@ var app = {
         $cycle.cycle({
             manualSpeed: 500,
             slides: '.slide',
-            timeout: 0,
+            timeout: 2500,
             fx: 'scrollHorz',
             next: '.prev',
             prev: '.next',

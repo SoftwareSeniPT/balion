@@ -16,6 +16,12 @@
     .custom-page h3, .customer-reviews h3 {
         font-size: 30px;
     }
+    #hero .slideshow .next img, #hero .slideshow .prev img {
+        display: none
+    }
+    #hero .slideshow .slide .outer {
+        bottom: 310px;
+    }
     .customer-reviews .review-item .image {
         width: 100%;
         margin-bottom: 20px;
