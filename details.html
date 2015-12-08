@@ -250,7 +250,49 @@
                         Praesentium doloribus voluptates, commodi ullam earum ea facilis libero dolorum eum dolores similique reiciendis fugiat, deleniti ab possimus itaque eveniet explicabo delectus non! Quo asperiores sunt beatae optio. Nulla accusamus quis quo, amet sint cumque aliquid officiis vel aliquam officia illo ratione doloremque odit. Aliquam amet eligendi qui.
                     </div>
                     <div id="calendar">
-                        Ipsam quam vel magnam hic provident, praesentium doloribus voluptates, commodi ullam earum ea facilis libero dolorum eum dolores similique reiciendis fugiat, deleniti ab possimus itaque eveniet explicabo delectus non! Quo asperiores sunt beatae optio. Nulla accusamus quis quo, amet sint cumque aliquid officiis vel aliquam officia illo ratione doloremque odit. Aliquam amet eligendi qui.
+                        <!-- Calendar -->
+
+                        <div id="calendar"></div>
+                        <script id="calendar-awesome-template" type="text/template">
+                            <div class="cm--wrapper clearfix" id="calendar-awesome">
+                                <div class="cm--header clndr-controls clearfix">
+                                    <span class="cm-navigation-prev clndr-previous-button">&lt;</span>
+                                    <% _.each(months, function(month) { %>
+                                        <div class="cm--header-month">
+                                            <%= month.month.format('MMMM') %>
+                                        </div>
+                                        <% }); %>
+                                            <span class="cm-navigation-next clndr-next-button">&gt;</span>
+                                </div>
+                                <div class="cm--content clearfix">
+                                    <% _.each(months, function(month) { %>
+                                        <div class="cm--month-block clndr-grid">
+                                            <div class="cm--days-of-the-week clearfix days-of-the-week">
+                                                <% _.each(daysOfTheWeek, function(day) { %>
+                                                    <div class="cm--header-day">
+                                                        <%= day %>
+                                                    </div>
+                                                    <% }); %>
+                                            </div>
+                                            <div class="cm--days clearfix">
+                                                <% _.each(month.days, function(day) { %>
+                                                    <div class="cm--day <%= day.classes %><% _.each(day.events, function(event) { %> <%= event.status %> <% }); %>"><span class="cm--day-number"><%= day.day %></span></div>
+                                                    <% }); %>
+                                            </div>
+                                        </div>
+                                        <% }); %>
+                                </div>
+                            </div>
+                        </script>
+                        <div class="legend">
+                            <div class="type booked">Booked</div>
+                            <div class="type booked checkin">Check In</div>
+                            <div class="type booked checkout">Check Out</div>
+                            <div class="type on_hold">On Request</div>
+                            <div class="type available">Available</div>
+                        </div>
+
+                        <!-- // Calendar -->
                     </div>
                     <div id="guestbook">
                         Raesentium doloribus voluptates, commodi ullam earum ea facilis libero dolorum eum dolores similique reiciendis fugiat, deleniti ab possimus itaque eveniet explicabo delectus non! Quo asperiores sunt beatae optio. Nulla accusamus quis quo, amet sint cumque aliquid officiis vel aliquam officia illo ratione doloremque odit. Aliquam amet eligendi qui.
@@ -297,6 +339,9 @@
     <script src="./js/jquery.cycle2.min.js"></script>
     <script src="./js/multiple-select.js"></script>
     <script src="./js/lightslider.min.js"></script>
+    <script src="./js/underscore.min.js"></script>
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/clndr.min.js"></script>
     <script src="./vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="./js/app.js"></script>
 </body>

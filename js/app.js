@@ -12,6 +12,7 @@ var app = {
         app.detailsPageLightSliderInit();
         app.detailsPageSlideshowTrigger();
         app.detailsPageThumbnailReveal();
+        app.clndrInit();
     },
     onResize: function() {
 
@@ -32,6 +33,65 @@ var app = {
             jQuery('.note-li').show();
             jQuery(this).hide();
             event.preventDefault();
+        });
+    },
+    clndrInit: function() {
+        if(!jQuery('#content').hasClass('details')) {
+            return false;
+        }
+
+        var APILink = "http://www.sohoterrace.com.au/calendar-availability-api/?arrival=2015-12-08&departure=2016-02-08";
+        var clndrTemplate = jQuery('#calendar-awesome-template').html();
+
+        jQuery('#calendar').clndr({
+            template: clndrTemplate,
+            // render: function(data) {
+            //     console.log(data)
+            // },
+            classes: {
+                today: "cm--today",
+                event: "cm--event",
+                past: "cm--past",
+                lastMonth: "cm--last-month",
+                nextMonth: "cm--next-month",
+                adjacentMonth: "cm--adjacent-month",
+                inactive: "cm--inactive",
+                selected: "cm--selected"
+            },
+            multiDayEvents: {
+                startDate: 'start',
+                endDate: 'end',
+                singleDay: 'date'
+            },
+            lengthOfTime: {
+                months: 3,
+                interval: 3
+            },
+            ready: function() {
+                var core_data = this;
+                jQuery.get(APILink).done(function(data) {
+
+                    jQuery.each(data, function(index, value) {
+                        if (value.status == "booked_by_owner" || value.status == "booked")
+                            data.push({
+                                date: value.start,
+                                status: 'checkin'
+                            })
+                        data.push({
+                            date: value.end,
+                            status: 'checkout'
+                        })
+                    });
+
+                    core_data.addEvents(data);
+                    jQuery('#calendar').removeClass('loading');
+                });
+            },
+            clickEvents: {
+                nextMonth: function(months) {
+                    // alert('sasasa');
+                }
+            }
         });
     },
     dropDownInit: function() {
