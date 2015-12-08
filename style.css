@@ -87,7 +87,7 @@ a img {
 header .top-menu {
     background-color: #1e3a21;
     text-align: right;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 header .navbar-wrapper {
@@ -235,10 +235,10 @@ header .outer {
 }
 
 header .logo {
-    width: 200px;
+    width: 140px;
     position: absolute;
     left: 20px;
-    top: -18px;
+    top: -7px;
 }
 
 header .logo img {
@@ -368,6 +368,7 @@ header {
     z-index: 300;
     transform: translateY(100%);
     transition: transform 500ms ease;
+    padding: 13px 20px;
 }
 
 .thumbnail-open #adv-custom-pager {
@@ -405,15 +406,33 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     width: 100%;
     height: 100%;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-color: #161616;
+}
+
+#hero .slideshow .next,
+#hero .slideshow .prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    z-index: 110;
+    cursor: pointer;
+}
+
+#hero .slideshow .prev {
+    left: auto;
+    right: 0;
 }
 
 #hero .slideshow {
-    height: 630px;
+    height: 500px;
     position: relative;
     color: #fff;
 }
@@ -426,9 +445,20 @@ header {
     right: 0;
     background-size: cover;
     background-position: center center;
-    padding-top: 330px;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#hero .slideshow .slide .outer {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: bottom;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 140px;
 }
 
 #hero h2 {
@@ -436,6 +466,7 @@ header {
     font-size: 65px;
     margin: 20px 0;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    margin-top: 0;
 }
 
 #hero .form-inquiry {
@@ -444,6 +475,7 @@ header {
     left: 20px;
     right: 20px;
     padding-bottom: 20px;
+    z-index: 120;
 }
 
 #hero .form-inquiry .outer {
@@ -1520,7 +1552,9 @@ footer .iframe-wrapper iframe {
     padding: 0 12px;
 }
 
+
 /* Custom page */
+
 .custom-page .outer {
     max-width: 680px;
 }

@@ -1,7 +1,9 @@
 var app = {
     init: function() {
+        app.owlCarouselInit();
         app.dropDownInit();
         app.detailsCycleInit();
+        app.homepageSlider();
         app.accordionChanger();
         app.initMap();
         app.multiSelectInit();
@@ -12,6 +14,17 @@ var app = {
     },
     onResize: function() {
 
+    },
+    owlCarouselInit: function() {
+        if(!jQuery('#content').hasClass('details')) {
+            return false;
+        }
+        var $cycle = jQuery("#slideshow .images");
+        $cycle.on('cycle-post-initialize', function(event, optionHash) {
+            // jQuery('#adv-custom-pager .carousel').owlCarousel({
+            //     // autoWidth: true
+            // })
+        });
     },
     dropDownInit: function() {
         jQuery('.dropdown').click(function() {
@@ -39,6 +52,19 @@ var app = {
             jQuery("#slideshow").fadeOut(300);
         });
     },
+    homepageSlider: function() {
+        var $cycle = jQuery(".home .slideshow");
+
+        $cycle.cycle({
+            manualSpeed: 500,
+            slides: '.slide',
+            timeout: 0,
+            fx: 'scrollHorz',
+            next: '.prev',
+            prev: '.next',
+            pauseOnHover: true
+        });
+    },
     detailsPageLightSliderInit: function() {
 
         var $cycle = jQuery("#slideshow .images");
@@ -52,18 +78,9 @@ var app = {
             prev: '.prev',
             caption: '#slideshow .page-count',
             captionTemplate: '{{slideNum}} / {{slideCount}}',
-            pager: '#adv-custom-pager',
+            pager: '#adv-custom-pager .carousel',
             pagerTemplate: "<a href='#'><img src='{{children.0.src}}' width=60 height=60></a>"
         });
-
-        $cycle.on('cycle-bootstrap', function(e, opts, API) {
-            console.log('dsdsd', 'sdsdsds');
-
-            API.customGetImageSrc = function(slideOpts, opts, slideEl) {
-                console.log(slideEl, 'sdsdsds');
-            }
-        });
-
 
     },
     detailsPageThumbnailReveal: function() {
