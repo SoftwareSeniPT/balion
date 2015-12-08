@@ -187,7 +187,7 @@ header .opened ul {
     background: #169f25;
     text-transform: uppercase;
     height: 34px;
-    padding: 7px 15px;
+    padding: 5px 15px;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
@@ -443,7 +443,7 @@ header {
 #hero .slideshow .next img,
 #hero .slideshow .prev img {
     max-width: 20px;
-    
+
 }
 
 #hero .slideshow .prev {
