@@ -295,7 +295,7 @@ header .sub-menu li:hover {
 
 header {
     position: relative;
-    z-index: 110;
+    z-index: 200;
 }
 
 #slideshow {
