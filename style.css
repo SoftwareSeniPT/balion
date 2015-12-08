@@ -1520,6 +1520,21 @@ footer .iframe-wrapper iframe {
     padding: 0 12px;
 }
 
+/* Custom page */
+.custom-page .outer {
+    max-width: 680px;
+}
+
+.custom-page h3 {
+    font-size: 48px;
+    font-family: 'Gentium Basic', serif;
+    margin: 30px 0;
+}
+
+.custom-page {
+    padding-bottom: 50px;
+}
+
 
 /* Animation */
 
