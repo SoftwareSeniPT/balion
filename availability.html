@@ -61,117 +61,143 @@
     </header>
     <div id="content" class="availability">
         <div class="outer">
-            <section class="heading">
-                <h3>Check Availability</h3>
-            </section>
-            <section class="hero-image" style="background-image: url(http://lorempixel.com/1200/400/sports/1)">
-                <div class="caption">Villa Shalimar</div>
-            </section>
-            <section class="rates">
-                <div class="wrapper">
-                    <h5 class="title">1 Night of Stay</h5>
-                    <table>
-                        <tr>
-                            <td>1 Weekday nights at AUD$480.0 per night (Low Season)</td>
-                            <td>AUD$480.0</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">Total: AUD$480.0</td>
-                        </tr>
-                    </table>
-                    <div class="inclusion">
-                        <span>Rate Inclusion:</span> Linen, Internet - Wifi
+            <!--  -->
+            <div id="availability-page">
+                <div class="left-layout">
+                    <h3 class="sidebar-title">Check Availability</h3>
+                    <article class="mk-blog-newspaper-item mk-isotop-item one-column isotope-item">
+                        <div class="blog-item-holder">
+                            <div class="featured-image">
+                                <a href="http://www.balivillasgroup.com/seminyak/adhyatma-villa/" title="Adhyatma Villa">
+                                    <img itemprop="image" src="http://i1.wp.com/images.balivillasgroup.com/luxelet/data/560/medium_IMG_6556.jpg?w=1140" title="Adhyatma Villa" alt="Adhyatma Villa" data-recalc-dims="1"></a>
+                            </div>
+                            <div class="mk-blog-meta top">
+                                <h3 class="the-title"><a href="http://www.balivillasgroup.com/seminyak/adhyatma-villa/">Adhyatma Villa</a></h3>
+                                <div class="room"><span class="room-icon"></span><span class="room-number">3</span></div>
+                                <div class="clearboth"></div>
+                            </div>
+                        </div>
+                        <div class="availability-sidebar-bottom">
+                            <div class="address">Jl. Drupadi Gang Damai, Seminyak Bali</div>
+                            <div class="whyus">
+                                <li>
+                                    <p>Best Price Guarantee</p>
+                                </li>
+                                <li>
+                                    <p>Australian owned Company with over 25 years experience</p>
+                                </li>
+                                <li>
+                                    <p>Staff in Bali to assist you with anything you may need</p>
+                                </li>
+                                <li>
+                                    <p>Pay deposit now with the balance payable closer to your arrival time.</p>
+                                </li>
+                                <li>
+                                    <p>Pay either by credit card or EFT (bank transfer)</p>
+                                </li>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="right-layout">
+                    <h1 class="page-title">Adhyatma Villa</h1>
+                    <div class="form-availability">
+                        <form name="availability-form" id="availability-form" action="">
+                            <table class="table-availability">
+                                <tbody>
+                                    <tr>
+                                        <th>Check in - Check out</th>
+                                        <th>Guests</th>
+                                        <th class="edit-col" style="display: none;"></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="check-in">
+                                            <div class="check_in_out" style="display: none;">
+                                                <strong>7 Nights</strong> (15-12-2015 - 22-12-2015)
+                                            </div>
+                                            <div class="check_in_out_edit" style="">
+                                                <input type="text" name="checkin" id="checkin_form" class="arrivaldate" position="top" placeholder="15-12-2015">
+                                                <input type="text" name="checkout" id="checkout_form" class="departuredate" position="top" placeholder="17-12-2015">
+                                            </div>
+                                        </td>
+                                        <td class="guests">
+                                            <div class="guests_number" style="display: none;">2</div>
+                                            <div class="guests_number_edit" style="">
+                                                <select name="no_of_guest" id="no_of_guest">
+                                                    <option value="">GUESTS</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2" selected="">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="10+">10+</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="edit edit-col" style="display: none;"><a class="edit-link" href="#" style="display: none;">edit</a><a style="" class="refresh-link" href="#">refresh</a></td>
+                                    </tr>
+                                    <tr class="booking-error error" style="display:none">
+                                        <td colspan="3">Please fill check in, check out date and number of guest</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="availability">
+                                <div class="availability-status">
+                                    The property is booked on your dates. Please contact us to be waitlisted or to request other dates.</div>
+                            </div>
+                            <div class="room-error" style="display:none">Please enter room type</div>
+                            <ul class="form-reservation">
+                                <li>
+                                    <label>Your name<span class="required">*</span></label>
+                                    <div class="wrap-input">
+                                        <span class="first-name">
+                                            <input type="text" name="first_name" id="first_name" placeholder="First Name" value="">
+                                        </span>
+                                        <span class="last-name">
+                                            <input type="text" name="last_name" id="last_name" placeholder="Last Name" value="">
+                                        </span>
+                                        <div class="name-error error" style="display:none">Please enter name</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Email<span class="required">*</span></label>
+                                    <div class="wrap-input">
+                                        <input type="text" name="email" id="email" placeholder="email@address.com" value="">
+                                        <div class="email-error error" style="display:none">Please enter email</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Phone<span class="required">*</span></label>
+                                    <div class="wrap-input">
+                                        <input type="text" name="phone" id="phone" placeholder="Phone number" value="">
+                                        <div class="phone-error error" style="display:none">Please enter phone number</div>
+                                    </div>
+                                </li>
+                                <li class="note-li" style="display:none">
+                                    <label>Note</label>
+                                    <div class="wrap-input">
+                                        <textarea name="note" id="note" placeholder="Please enter your request or question"></textarea>
+                                    </div>
+                                </li>
+                                <li class="requests"><a href="#">+ Do you have any special requests or questions?</a></li>
+                                <li class="button-reserve" style="display:none">
+                                    <input type="button" value="Reserve" class="button">
+                                </li>
+                                <li class="button-request">
+                                    <label>If you have questions about the property please ask</label>
+                                    <input type="button" value="Request Information" class="button">
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                 </div>
-            </section>
-            <section class="search-form">
-                <div class="row">
-                    <div class="col col-100 description">
-                        Please choose departure and arrival date and number of guest
-                    </div>
-                    <div class="col col-50">
-                        <div class="row">
-                            <div class="col col-50">
-                                <!-- Checkin -->
-                                <label for="">Checkin</label>
-                                <input type="text" class="arrivaldate" placeholder="Check In" position="top">
-                            </div>
-                            <div class="col col-50">
-                                <!-- Checkin -->
-                                <label for="">Checkout</label>
-                                <input type="text" class="departuredate" placeholder="Check Out" position="top">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col col-33">
-                                <!-- Checkin -->
-                                <label for="">Adult</label>
-                                <select name="" id="" class="form-member">
-                                    <option value="#">1</option>
-                                    <option value="#">2</option>
-                                    <option value="#">3</option>
-                                    <option value="#">4</option>
-                                    <option value="#">5</option>
-                                </select>
-                            </div>
-                            <div class="col col-33">
-                                <!-- Checkin -->
-                                <label for="">Child</label>
-                                <select name="" id="" class="form-member">
-                                    <option value="#">1</option>
-                                    <option value="#">2</option>
-                                    <option value="#">3</option>
-                                    <option value="#">4</option>
-                                    <option value="#">5</option>
-                                </select>
-                            </div>
-                            <div class="col col-33">
-                                <!-- Checkin -->
-                                <label for="">Infant</label>
-                                <select name="" id="" class="form-member">
-                                    <option value="#">1</option>
-                                    <option value="#">2</option>
-                                    <option value="#">3</option>
-                                    <option value="#">4</option>
-                                    <option value="#">5</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-50">
-                        <div class="row">
-                            <div class="col col-50">
-                                <!-- Checkin -->
-                                <label for="">Your Name</label>
-                                <input type="text" class="" placeholder="First name" />
-                            </div>
-                            <div class="col col-50">
-                                <!-- Checkin -->
-                                <label for=""></label>
-                                <input type="text" class="" placeholder="Last name" />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col col-100">
-                                <!-- Checkin -->
-                                <label for="">Your Email</label>
-                                <input type="text" class="" placeholder="Email" />
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="col col-100 firmsdate">
-                        <div class="wrapper">
-                            <input type="checkbox" name="firmsdate" id=""> 
-                            <label for="firmsdate">I don't have firms date</label> 
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="buttons">
-                <button type="submit" class="btn">Book Now</button>
-                <a href="#" class="btn white">Request Information</a>
-                <a href="#" class="btn transparent">Cancel</a>
-            </section>
+            </div>
+            <!--  -->
         </div>
     </div>
     <footer>

@@ -6,6 +6,7 @@ var app = {
         app.homepageSlider();
         app.accordionChanger();
         app.initMap();
+        app.availabilityPageHandler();
         app.multiSelectInit();
         app.refineSearchReveal();
         app.detailsPageLightSliderInit();
@@ -24,6 +25,13 @@ var app = {
             // jQuery('#adv-custom-pager .carousel').owlCarousel({
             //     // autoWidth: true
             // })
+        });
+    },
+    availabilityPageHandler: function() {
+        jQuery('#availability-page .requests').click(function(event){
+            jQuery('.note-li').show();
+            jQuery(this).hide();
+            event.preventDefault();
         });
     },
     dropDownInit: function() {

@@ -412,7 +412,7 @@ header {
     height: 100%;
     cursor: pointer;
     background-repeat: no-repeat;
-    background-color: #161616;
+    background-color: #222;
 }
 
 #hero .slideshow .next,
@@ -1579,4 +1579,627 @@ footer .iframe-wrapper iframe {
     transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
-section.hero-image {}
+
+/* Availability page */
+
+#availability-page {
+    overflow: hidden;
+}
+
+#availability-page input[type=email],
+#availability-page input[type=password],
+#availability-page input[type=tel],
+#availability-page input[type=text],
+#availability-page textarea {
+    font-size: 13px;
+    color: #767676;
+    padding: 10px 12px;
+    background-color: #fdfdfd;
+    border: 1px solid #e3e3e3;
+    outline: 0;
+    margin-bottom: 4px;
+}
+
+#availability-page table {
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px;
+    overflow: hidden;
+}
+
+#availability-page .button {
+    background-color: #1E3A21;
+    padding: 20px !important;
+    width: 50%;
+    border: none!important;
+    outline: 0!important;
+    color: #fff!important;
+    font-size: 13px;
+    line-height: 13px!important;
+    padding: 15px!important;
+    text-transform: uppercase;
+    vertical-align: top;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+#availability-page .availability-status {
+    border: 1px solid #E3E3E3;
+    margin-left: 0px;
+    padding: 10px;
+    background-color: #EEE;
+    margin-bottom: 20px;
+}
+
+#availability-page select {
+    border: 1px solid #e3e3e3;
+    background: url(./images/selectbox-arrow.png) right center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 12px 14px 12px 20px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #252525;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important;
+    font-weight: 700;
+    min-width: 240px;
+    max-width: 100%;
+    display: block;
+}
+
+#availability-page .left-layout {
+    width: 35%;
+    padding: 30px 0 0;
+    float: left;
+}
+
+#availability-page .right-layout {
+    width: 65%;
+    padding-left: 30px;
+    padding-top: 30px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+ul.availability-feat {
+    background-color: #f6f6f6;
+    border: 1px solid #e3e3e3;
+    display: inline-block;
+    list-style: outside none none;
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+ul.availability-feat li {
+    border-bottom: 1px dashed #e3e3e3;
+    margin: 0;
+    padding: 5px 0;
+}
+
+ul.availability-feat li .fa {
+    color: #fda750;
+    float: right;
+    margin-top: 3px;
+}
+
+#availability-page h1.page-title {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.mk-blog-newspaper-item .mk-blog-meta.top {
+    background-color: #d8d8d8;
+    padding: 14px 20px;
+    position: relative;
+}
+
+#availability-page .featured-image img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.availability-sidebar-bottom .address {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.availability-sidebar-bottom li {
+    margin-top: 15px;
+    border-bottom: 1px dotted;
+    background: url(./images/check-li.png) no-repeat 0 80%;
+    background-position: right;
+    list-style: none;
+    padding-right: 45px;
+}
+
+.availability-sidebar-bottom li p {
+    line-height: 1.4;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.mk-blog-newspaper-item .mk-blog-meta.top {
+    background-color: #d8d8d8;
+    padding: 14px 20px;
+    position: relative;
+    min-height: 66px;
+}
+
+.mk-blog-newspaper-item .mk-blog-meta.top h3 {
+    margin: 0 !important;
+    padding-right: 80px;
+    line-height: 1;
+    height: auto;
+    vertical-align: top;
+}
+
+.mk-blog-newspaper-item .mk-blog-meta.top h3 a {
+    display: block;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.mk-blog-newspaper-item .mk-blog-meta.top .room {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.mk-blog-meta.top .room .room-icon {
+    background: transparent url("./images/bed.png") no-repeat scroll center center;
+    display: block;
+    float: left;
+    height: 20px;
+    margin-right: 7px;
+    width: 32px;
+}
+
+.mk-blog-meta.top .room .room-number {
+    color: #838b8d;
+    display: block;
+    float: left;
+    line-height: 1;
+    padding-top: 6px;
+}
+
+.sidebar-wrapper .mk-blog-meta.top .room .room-number {
+    padding-top: 5px;
+}
+
+.mk-blog-newspaper-item .mk-blog-meta.bottom {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    min-height: 110px;
+}
+
+.mk-blog-newspaper-item .mk-blog-meta.bottom.special {
+    background-color: #824161;
+    border: 7px solid #3b2e42;
+    color: #ffffff;
+    padding: 3px 13px;
+    height: 160px;
+}
+
+#availability-page h3.sidebar-title {
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#availability-page .form-availability {
+    background-color: #fdfdfd;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+}
+
+table.table-availability {
+    margin-bottom: 20px;
+}
+
+table.table-availability tr {}
+
+table.table-availability th,
+table.table-availability td {
+    padding: 12px;
+    border: 1px solid #e3e3e3;
+}
+
+table.table-availability th {
+    background-color: #EEEEEE;
+}
+
+table.table-availability td {
+    background-color: #ffffff;
+    padding: 12px;
+}
+
+table.table-availability td.check-in {
+    width: 50%;
+}
+
+table.table-availability td.check-in input {
+    width: 48% !important;
+    height: 44px;
+}
+
+table.table-availability td.guests {
+    width: 30%;
+}
+
+#theme-page table.table-availability td.guests select {
+    min-width: 100px;
+    width: 100%;
+}
+
+table.table-availability td.edit a {
+    color: #fda750;
+}
+
+ul.choose-offer {
+    list-style: outside none none;
+    margin-left: 0;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+ul.choose-offer li {
+    background-color: #ffffff;
+    margin: 0 0 10px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid #e3e3e3;
+}
+
+ul.choose-offer li.selected {
+    background-color: #824161;
+    color: #ffffff;
+}
+
+ul.choose-offer li.selected p {
+    color: #ffffff;
+}
+
+ul.choose-offer li p.option {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+ul.choose-offer li input[type="radio"] {
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+ul.choose-offer li p.guarantee {
+    bottom: 10px;
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+}
+
+ul.choose-offer li p.price {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    text-align: right;
+}
+
+ul.choose-offer li p.price span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.customer-nights-of-stay {
+    background-color: #ffffff;
+    margin: 0 0 10px;
+    padding: 20px;
+    position: relative;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+}
+
+ul.availability-rate {
+    list-style: outside none none;
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
+
+ul.availability-rate li {
+    background-color: #ffffff;
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+ul.availability-rate li.selected {
+    background-color: #824161;
+    color: #ffffff;
+}
+
+ul.availability-rate li.selected p {
+    color: #ffffff;
+}
+
+ul.availability-rate li p.option {
+    font-size: 14px;
+    margin-bottom: 0;
+    float: left;
+}
+
+ul.availability-rate li p.option label {}
+
+ul.availability-rate li input[type="radio"] {
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+ul.availability-rate li p.facilities {}
+
+ul.availability-rate li p.guarantee {
+    bottom: 10px;
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+}
+
+ul.availability-rate li p.inclusions {
+    margin: 0px;
+}
+
+ul.availability-rate li p.price {
+    float: right;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0px;
+    text-align: right;
+    font-weight: bold;
+}
+
+ul.availability-rate li p.price span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.average-price {
+    border: 1px solid #e3e3e3;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.average-price p {
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+.average-price .price {
+    color: #ff0000;
+    font-size: 33px;
+}
+
+.average-price .per-night {
+    font-style: italic;
+}
+
+.price-total {
+    float: right;
+    font-size: 18px;
+    clear: both;
+    margin-right: 20px;
+}
+
+ul.form-reservation {
+    background-color: #f4f4f4;
+    border: 1px solid #e3e3e3;
+    list-style: outside none none;
+    margin: 0;
+    padding: 20px;
+}
+
+ul.form-reservation li {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+ul.form-reservation li .wrap-input {
+    float: left;
+    width: 70%;
+}
+
+ul.form-reservation li .wrap-input span {
+    float: left;
+    width: 50%;
+}
+
+ul.form-reservation li .wrap-input span.first-name {
+    padding-right: 10px;
+}
+
+ul.form-reservation li label {
+    float: left;
+    font-weight: bold;
+    padding-right: 10px;
+    text-transform: uppercase;
+    width: 30%;
+    padding-top: 10px;
+}
+
+ul.form-reservation li.button-request label {
+    padding-top: 0;
+    padding-right: 20px;
+}
+
+ul.form-reservation li input[type="text"],
+ul.form-reservation li textarea {
+    width: 100%;
+}
+
+ul.form-reservation li.requests {
+    text-align: right;
+}
+
+ul.form-reservation li.requests a {
+    text-decoration: underline;
+}
+
+ul.form-reservation li.button-reserve {
+    padding-top: 10px;
+    text-align: right;
+}
+
+ul.form-reservation li.button-reserve .button {
+    background-color: #fda750;
+    padding: 20px !important;
+    width: 50%;
+}
+
+ul.form-reservation li.button-request {
+    padding-top: 10px;
+    text-align: right;
+}
+
+ul.form-reservation li.button-request .button {
+    background-color: #824161;
+    padding: 20px !important;
+    width: 50%;
+}
+
+ul.form-reservation li.button-request label {
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 40px;
+    text-transform: none;
+    width: 50%;
+}
+
+#quicksearch-1 {
+    bottom: 50px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+#quicksearch-1 .wrap {
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: rgba(127, 66, 99, 0.8);
+    padding: 10px 10px 0;
+    width: 100%;
+}
+
+ul.quicksearch {
+    display: block;
+    list-style: outside none none;
+    margin: 0 -5px;
+    padding: 0;
+}
+
+ul.quicksearch li {
+    float: left;
+    margin: 0 0 10px;
+    padding: 0 5px;
+    width: 18%;
+}
+
+ul.quicksearch li select,
+#theme-page ul.quicksearch li select {
+    background-color: #ffffff;
+    height: 40px;
+    line-height: 20px;
+    min-width: 100px;
+    padding: 10px 40px 10px 10px;
+    width: 100%;
+}
+
+ul.quicksearch li input[type="text"] {
+    height: 40px;
+    line-height: 20px;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+ul.quicksearch li.destination {
+    width: 28%;
+}
+
+ul.quicksearch li.button-book {}
+
+ul.quicksearch li.button-book .wpcf7-submit {
+    background-color: #f9a655;
+    border: medium none;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 12px;
+    height: 40px;
+    line-height: 20px;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#quicksearch-2 {
+    background-color: #7f4263;
+    display: inline-block;
+    padding: 20px 20px 10px;
+    width: 100%;
+}
+
+#quicksearch-2 ul.quicksearch {}
+
+.essb_links.essb_template_metro-retina {
+    clear: both;
+    margin: 20px auto;
+    max-width: 1170px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    word-wrap: normal !important;
+}
+
+#bottom-links {
+    padding: 40px 0 0;
+}
+
+#bottom-links .widget_nav_menu ul {
+    min-height: 250px;
+    padding: 10px;
+}
+
+#bottom-links .widget_nav_menu ul li {
+    border-bottom: none;
+}
+
+.footer-wrapper #recent_posts-3 img {
+    max-width: 80px;
+}
+
+.gm-style img {
+    max-width: none !important;
+}
