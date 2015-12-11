@@ -7,6 +7,9 @@
     #hero .slideshow .slide {
         padding-top: 270px;
     }
+    #hero .hero-background {
+        background-size: cover
+    }
     footer .outer {
         border: 0;
     }

@@ -111,7 +111,7 @@ var app = {
         });
     },
     detailsPageSlideshowTrigger: function() {
-        jQuery('#hero .hero-background, .details .gallery-grid .row > a').click(function() {
+        jQuery('#hero .hero-background, .details .gallery-grid .row > a, .camera-icon').click(function() {
             jQuery("#slideshow").fadeIn(300);
             return false;
         });

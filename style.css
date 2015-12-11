@@ -14,7 +14,87 @@ body {
     background: #EAF6EC;
 }
 
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 
 .container {
     max-width: 1200px;
@@ -445,7 +525,6 @@ header {
 #hero .slideshow .next img,
 #hero .slideshow .prev img {
     max-width: 20px;
-
 }
 
 #hero .slideshow .prev {
@@ -2399,7 +2478,7 @@ ul.quicksearch li.button-book .wpcf7-submit {
 
 .cm--day.checkout,
 .type.booked.checkout:before {
-    background-image: url(../images/check.png);
+    background-image: url(./images/check.png);
     background-position: 31px 0;
 }
 
@@ -2409,7 +2488,7 @@ ul.quicksearch li.button-book .wpcf7-submit {
 
 .cm--day.checkin,
 .type.booked.checkin:before {
-    background-image: url(../images/check.png);
+    background-image: url(./images/check.png);
     background-position: 0 0;
 }
 
@@ -2545,4 +2624,38 @@ ul.quicksearch li.button-book .wpcf7-submit {
         width: 100%;
         ;
     }
+}
+
+.camera-icon {
+    position: absolute;
+    bottom: 10px;
+    z-index: 160;
+    background: #fff;
+    width: 60px;
+    padding: 1px 12px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.camera-icon:after {
+    content: attr(data-count);
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #CECCCC;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 1px 6px;
+    box-sizing: border-box;
+}
+
+.camera-icon img {
+    height: 37px;
+    vertical-align: top;
 }
