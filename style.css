@@ -1373,7 +1373,6 @@ footer .iframe-wrapper iframe {
     width: 50%;
 }
 
-
 .details .gallery-grid img {
     vertical-align: top;
     max-width: 100%;
@@ -1929,6 +1928,7 @@ ul.availability-feat li .fa {
     line-height: 1;
     height: auto;
     vertical-align: top;
+    font-size: 15px;
 }
 
 .mk-blog-newspaper-item .mk-blog-meta.top h3 a {
@@ -2108,6 +2108,8 @@ ul.availability-rate {
     text-align: left;
     margin-bottom: 0px !important;
     margin-top: 10px;
+    overflow: hidden;
+    line-height: 2;
 }
 
 ul.availability-rate li {
@@ -2667,4 +2669,239 @@ ul.quicksearch li.button-book .wpcf7-submit {
 .camera-icon img {
     height: 37px;
     vertical-align: top;
+}
+
+
+/*Payment page  */
+
+#content.payment .outer {
+    background: #fff;
+}
+
+#payment-page {
+    overflow: hidden;
+}
+
+#payment-page .left-layout {
+    width: 65%;
+    padding: 30px 30px 30px 0;
+    float: left;
+}
+
+#payment-page .right-layout {
+    width: 35%;
+    padding-top: 30px;
+    float: left;
+}
+
+#payment-page .payment-details {}
+
+#payment-page h2.ref-number {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+#payment-page h2.ref-number span {
+    color: #fda750
+}
+
+#payment-page .payment-details p {}
+
+#payment-page .payment-details p.checkin {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#payment-page .payment-details p.checkin span {
+    background-color: #f4f3ee;
+    float: right;
+    font-weight: bold;
+    margin-top: -5px;
+    padding: 5px 10px;
+}
+
+#payment-page .payment-details .line {
+    border-top: 1px solid #E3E3E3;
+}
+
+#payment-page ul.payment-receipt {
+    list-style: outside none none;
+    margin: 0 0 40px;
+    margin-top: 40px;
+}
+
+#payment-page ul.payment-receipt li {
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+#payment-page ul.payment-receipt li.line {}
+
+#payment-page ul.payment-receipt span.number {
+    float: right;
+    font-weight: bold;
+}
+
+#payment-page .remaining-balance-in-aud {
+    text-align: right;
+}
+
+#payment-page .remaining-balance {
+    padding-left: 32px !important;
+}
+
+#payment-page .remaining-balance-in-aud label {
+    font-size: 14px;
+}
+
+#payment-page ul.payment-receipt label {}
+
+#payment-page ul.payment-receipt li.total {
+    background-color: #f6f6f6;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 10px 5px;
+}
+
+#payment-page ul.payment-receipt li.total label {}
+
+#payment-page ul.payment-receipt li.total.deposit {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#payment-page ul.payment-receipt li.total.deposit label {}
+
+#payment-page ul.payment-receipt li.total.deposit span.number {}
+
+#payment-page ul.payment-receipt li.pay-method,
+#payment-page ul.payment-receipt li.deposit-req {
+    border-bottom: none;
+}
+
+#payment-page ul.payment-receipt li.pay-method {}
+
+.pay-method100 {
+    border-bottom: 1px solid #E3E3E3 !important;
+}
+
+#payment-page ul.payment-receipt li.pay-method span.selected {
+    color: #fda750;
+}
+
+#payment-page ul.payment-receipt input[type="radio"] {
+    margin-right: 7px;
+}
+
+#payment-page .payment-details h4,
+.secure-container h4 {
+    color: #404040;
+    margin: 0;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 11px;
+}
+
+#payment-page .payment-details h4:after,
+.secure-container h4:after {
+    display: none
+}
+
+#payment-page .featured-image img {
+    width: 100%;
+    vertical-align: top;
+}
+
+form#payment-form {}
+
+form#payment-form h2.form-title {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+ul.form-payment {
+    list-style: outside none none;
+    margin: 0 0 20px;
+    margin-top: 20px;
+}
+
+ul.form-payment li {
+    margin: 0 0 7px;
+    display: inline-block;
+    width: 100%;
+}
+
+ul.form-payment label {
+    margin-bottom: 5px;
+    padding-top: 7px;
+    width: 100%;
+    font-weight: bold;
+    color: #606060;
+}
+
+#show-pay-popup {
+    border: none!important;
+    outline: 0!important;
+    color: #fff!important;
+    font-size: 13px;
+    line-height: 13px!important;
+    padding: 12px 15px!important;
+    text-transform: uppercase;
+    vertical-align: top;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #46C054;
+    cursor: pointer;
+}
+
+ul.form-payment input[type="text"] {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text],
+textarea,
+select {
+    font-size: 13px;
+    color: #767676;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    outline: 0;
+    margin-bottom: 4px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.secure-container {
+    border: 5px double #d8d8d8;
+    padding: 15px;
+    font-size: 15px;
+}
+.secure-subtitle-box {
+    float: left;
+    margin-bottom: 15px;
+}
+.secure-icon {
+    float: left;
+    width: 10%;
+}
+.secure-subtitle {
+}
+#payment-page .payment-details h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
