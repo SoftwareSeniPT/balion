@@ -13,6 +13,7 @@ var app = {
         app.detailsPageSlideshowTrigger();
         app.detailsPageThumbnailReveal();
         app.clndrInit();
+        app.reviewSlider();
     },
     onResize: function() {
 
@@ -131,6 +132,18 @@ var app = {
             next: '.prev',
             prev: '.next',
             pauseOnHover: true
+        });
+    },
+    reviewSlider: function() {
+        var $cycle = jQuery(".review-slide");
+
+        $cycle.cycle({
+            manualSpeed: 500,
+            slides: '.slide',
+            timeout: 0,
+            fx: 'scrollHorz',
+            next: '.review-wrapper .right',
+            prev: '.review-wrapper .left',
         });
     },
     detailsPageLightSliderInit: function() {
