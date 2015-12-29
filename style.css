@@ -762,7 +762,8 @@ header {
     padding-right: 5px;
 }
 
-#content .features li:first-child {
+#content .features li:first-child,
+#content .features li:nth-child(2) {
     width: 33.32%;
 }
 
@@ -774,11 +775,13 @@ header {
     background: #1E3A21;
 }
 
-#content .icon-car {
+#content .icon-bed,
+#content .icon-shower {
     padding-bottom: 46%;
 }
 
-#content .icon-car:after {
+#content .icon-bed:after,
+#content .icon-shower:after {
     content: attr(data-num);
     position: absolute;
     color: #fff;
@@ -792,12 +795,13 @@ header {
     border-left: 1px solid #4D604F;
 }
 
-#content.details .icon-car:after {
+#content.details .icon-bed:after,
+#content.details .icon-shower:after {
     padding: 3px 10px;
     font-size: 15px;
 }
 
-#content.details .icon-car {
+#content.details .icon-bed, #content.details .icon-shower {
     padding-bottom: 42%;
 }
 
@@ -807,23 +811,27 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(./images/icon-beach.svg);
+    background: url(./images/icon-shower.svg);
     content: '';
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#content .icon-car:before {
-    background: url(./images/icon-car.svg) no-repeat;
+#content .icon-shower:before {
     right: 54%;
 }
 
-#content .icon-kitchen:before {
-    background: url(./images/icon-dinner.svg);
+#content .icon-bed:before {
+    background: url(./images/icon-bed.svg) no-repeat;
+    right: 54%;
 }
 
-#content .icon-swimming:before {
-    background: url(./images/icon-swimming.svg);
+#content .icon-beach:before {
+    background: url(./images/icon-beach.svg);
+}
+
+#content .icon-event:before {
+    background: url(./images/icon-event.svg);
 }
 
 #content .icon-people:before {
