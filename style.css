@@ -762,8 +762,7 @@ header {
     padding-right: 5px;
 }
 
-#content .features li:first-child,
-#content .features li:nth-child(2) {
+#content .features li:first-child {
     width: 33.32%;
 }
 
