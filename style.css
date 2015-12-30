@@ -1090,8 +1090,8 @@ header {
 }
 
 footer {
-    color: #333;
-    background: #E8EAE8;
+    color: #FFF;
+    background: #1E3A21;
     border-top: 1px solid #E2E2E2;
 }
 
@@ -1105,8 +1105,12 @@ footer .row {
 footer .grid {
     padding-left: 15px;
     padding-right: 15px;
-    width: 33.3%;
+    width: 25%;
     float: left;
+}
+
+footer a:hover {
+    color:#94E79D;
 }
 
 footer .grid ul {
@@ -1140,6 +1144,8 @@ footer input[type=text] {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     outline: none;
+    background: #fff;
+    margin-top: 10px;
 }
 
 footer button:hover {
@@ -1148,17 +1154,17 @@ footer button:hover {
 }
 
 footer button {
-    background: transparent;
+    background: #169F25;
     text-transform: uppercase;
     height: 40px;
     padding: 7px 24px;
     font-weight: bold;
-    color: #46C054;
+    color: #FFFFFF;
     cursor: pointer;
     transition: background 0.2s ease;
     outline: 0;
-    border: 2px solid #46C054;
-    font-size: 14px;
+    border: none;
+    font-size: 17px;
     margin-top: 15px;
 }
 
@@ -1168,7 +1174,8 @@ footer h3 {
     margin: 15px 0;
 }
 
-footer a {}
+footer a {
+    color: #fff;}
 
 footer .outer {
     padding-top: 30px;
