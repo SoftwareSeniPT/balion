@@ -800,7 +800,8 @@ header {
     font-size: 15px;
 }
 
-#content.details .icon-bed, #content.details .icon-shower {
+#content.details .icon-bed,
+#content.details .icon-shower {
     padding-bottom: 42%;
 }
 
@@ -1110,7 +1111,7 @@ footer .grid {
 }
 
 footer a:hover {
-    color:#94E79D;
+    color: #94E79D;
 }
 
 footer .grid ul {
@@ -1175,7 +1176,8 @@ footer h3 {
 }
 
 footer a {
-    color: #fff;}
+    color: #fff;
+}
 
 footer .outer {
     padding-top: 30px;
@@ -1407,7 +1409,7 @@ footer .iframe-wrapper iframe {
 }
 
 .details .review-author .name {
-    font-size: 18px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
@@ -1428,8 +1430,8 @@ footer .iframe-wrapper iframe {
     margin-left: -24px;
 }
 
-.details .review-wrapper .review-text:before,
-.details .review-wrapper .review-text:after {
+.details .review-wrapper .review-text span:before,
+.details .review-wrapper .review-text span:after {
     font-family: "FontAwesome";
     content: "\f10d";
     margin-right: 5px;
@@ -1442,9 +1444,15 @@ footer .iframe-wrapper iframe {
     height: 100%;
 }
 
-.details .review-wrapper .review-text:after {
+.details .review-wrapper .review-text span:after {
     content: "\f10e";
     margin-left: 5px;
+}
+
+.details .review-wrapper .review-text span {
+    height: 250px;
+    display: block;
+    overflow: auto;
 }
 
 .details .arrow-down:after {

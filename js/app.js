@@ -138,6 +138,7 @@ var app = {
         var $cycle = jQuery(".review-slide");
 
         $cycle.cycle({
+            autoHeight: 1,
             manualSpeed: 500,
             slides: '.slide',
             timeout: 0,
