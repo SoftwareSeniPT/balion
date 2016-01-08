@@ -18,6 +18,17 @@
 </head>
 
 <body class="home">
+<!-- // Facebook SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.5&appId=590016501069261";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook SDK -->
+
     <header>
         <div class="top-menu">
             <div class="outer">
@@ -58,7 +69,6 @@
         </div>
         <!-- // Navigation bar -->
     </header>
-
     <div id="hero">
         <!-- Slideshow -->
         <div class="slideshow">
@@ -80,7 +90,6 @@
                     <a href="#" class="btn">View Our Portfolio</a>
                 </div>
             </div>
-
             <!-- Pagination -->
             <div class="next">
                 <span><img src="./images/caret-left.png" alt=""></span>
@@ -93,29 +102,29 @@
         <div class="form-inquiry">
             <div class="outer">
                 <form action="">
-                <div class="form-member location">
-                    <select name="" id="" placeholder="Location">
-                        <option value="#">United State</option>
-                    </select>
-                </div>
-                <div class="form-member">
-                    <input type="text" name="" id="" class="form-member arrivaldate" placeholder="Check In" position="top">
-                </div>
-                <div class="form-member">
-                    <input type="text" name="" id="" class="form-member departuredate" placeholder="Check Out" position="top">
-                </div>
-                <div class="form-member">
-                    <select name="" id="" class="form-member" placeholder="Guest">
-                        <option value="#">1</option>
-                        <option value="#">2</option>
-                        <option value="#">3</option>
-                        <option value="#">4</option>
-                        <option value="#">5</option>
-                    </select>
-                </div>
-                <div class="form-member">
-                    <button class="btn" type="submit">Search</button>
-                </div>
+                    <div class="form-member location">
+                        <select name="" id="" placeholder="Location">
+                            <option value="#">United State</option>
+                        </select>
+                    </div>
+                    <div class="form-member">
+                        <input type="text" name="" id="" class="form-member arrivaldate" placeholder="Check In" position="top">
+                    </div>
+                    <div class="form-member">
+                        <input type="text" name="" id="" class="form-member departuredate" placeholder="Check Out" position="top">
+                    </div>
+                    <div class="form-member">
+                        <select name="" id="" class="form-member" placeholder="Guest">
+                            <option value="#">1</option>
+                            <option value="#">2</option>
+                            <option value="#">3</option>
+                            <option value="#">4</option>
+                            <option value="#">5</option>
+                        </select>
+                    </div>
+                    <div class="form-member">
+                        <button class="btn" type="submit">Search</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -174,7 +183,6 @@
                                 <li><i class="icon icon-bed" data-num="5"></i></li>
                                 <li><i class="icon icon-beach"></i></li>
                                 <li><i class="icon icon-event"></i></li>
-                                
                             </ul>
                         </div>
                     </div>
@@ -190,7 +198,6 @@
                                 <li><i class="icon icon-bed" data-num="4"></i></li>
                                 <li><i class="icon icon-beach"></i></li>
                                 <li><i class="icon icon-event"></i></li>
-                                
                             </ul>
                         </div>
                     </div>
@@ -206,7 +213,6 @@
                                 <li><i class="icon icon-bed" data-num="2"></i></li>
                                 <li><i class="icon icon-beach"></i></li>
                                 <li><i class="icon icon-event"></i></li>
-                                
                             </ul>
                         </div>
                     </div>
@@ -222,7 +228,6 @@
                                 <li><i class="icon icon-bed" data-num="1"></i></li>
                                 <li><i class="icon icon-beach"></i></li>
                                 <li><i class="icon icon-event"></i></li>
-                                
                             </ul>
                         </div>
                     </div>
@@ -232,33 +237,94 @@
                 </div>
             </div>
         </section>
-    </div>
-    <footer>
-        <div class="outer">
-            <div class="row">
-                <div class="grid facebook-update">
-                    <h3>Our Latest Update</h3>
-                    <ul>
-                        <li>Villa Valentine - Stunning 5 bedroom Family villa. From USD $595 per night for 10 people - that works out to USD$59 per person per night!</li>
-                        <li>Experience Villa Eden - Seminyak, Bali - http://modo.ly/1M9BFMF From USD$345 per night for 6 people For more details - se <a href="#">http://modo.ly/1GYiJ2f</a></li>
-                    </ul>
-                </div>
-                <div class="grid">
-                    <h3>Our Latest Video</h3>
-                    <div class="iframe-wrapper">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/n4L_SyU6Brc" frameborder="0" allowfullscreen></iframe>
+        <section class="feature-grid-list">
+            <div class="outer">
+                <div class="row">
+                    <div class="item">
+                        <h4>Bali Family Villas</h4>
+                        <img src="./images/villa-6.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perferendis autem vel quia aliquam exercitationem a enim, consectetur provident, debitis velit qui ipsa atque labore sed voluptates non omnis rerum.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Bali Beachfront Villa</h4>
+                        <img src="./images/villa-7.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perferendis autem vel quia aliquam exercitationem a enim, consectetur provident, debitis velit qui ipsa atque labore sed voluptates non omnis rerum.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Bali Spa Retreats</h4>
+                        <img src="./images/villa-4.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perferendis autem vel quia aliquam exercitationem a enim, consectetur provident, debitis velit qui ipsa atque labore sed voluptates non omnis rerum.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Bali Wedding Villa</h4>
+                        <img src="./images/villa-3.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perferendis autem vel quia aliquam exercitationem a enim, consectetur provident, debitis velit qui ipsa atque labore sed voluptates non omnis rerum.</p>
                     </div>
                 </div>
-                <div class="grid">
-                    <h3>Newsletter</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-                    <form action="#">
-                        <input type="text" placeholder="Your Email Address">
-                        <button type="submit">Sign Up</button>
-                    </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <section class="social-links">
+            <div class="outer">
+                <div class="row">
+                    <div class="grid facebook-update">
+                        <h3>Facebook</h3>
+                        <div class="fb-page" data-href="https://www.facebook.com/BaliOn-965710503492283" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-height="300"></div>
+                    </div>
+                    <div class="grid">
+                        <h3>Video</h3>
+                        <div class="iframe-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/n4L_SyU6Brc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <h3>Newsletter</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Your Email Address">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="category-list">
+            <div class="outer">
+                <ul>
+                    <li><a href="#">Canggu Villas</a></li>
+                    <li><a href="#">Sanur Villas</a></li>
+                    <li><a href="#">Jimbaran Villas</a></li>
+                    <li><a href="#">Ubud Villas</a></li>
+                    <li><a href="#">Pantai Seseh / Tanah Lot Villas</a></li>
+                    <li><a href="#">Ketewel Villas</a></li>
+                    <li><a href="#">Candi Dasa Villas</a></li>
+                    <li><a href="#">Lombok Villas</a></li>
+                    <li><a href="#">Seminyak Area Villas</a></li>
+                    <li><a href="#">Nusa Dua Villas</a></li>
+                    <li><a href="#">North Coast Villas</a></li>
+                    <li><a href="#">Gili's Villas</a></li>
+                    <li><a href="#">Umalas Villas</a></li>
+                    <li><a href="#">The Butik Villas</a></li>
+                    <li><a href="#">Mountains / Wanagiri Villas</a></li>
+                    <li><a href="#">Nusa Lembongan Villas</a></li>
+                    <li><a href="#">Balian Villas</a></li>
+                </ul>
+            </div>
+        </section>   
+        <section class="copyright">
+            <div class="outer">
+                <ul class="menu-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+
+                <div class="copyright-text">
+                    Copyright 2015 BaliOn
+                </div>
+            </div>
+        </section>
     </footer>
     <!-- Script -->
     <script src="./js/jquery-1.11.3.min.js"></script>

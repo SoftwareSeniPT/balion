@@ -13,13 +13,32 @@
     footer .outer {
         border: 0;
     }
+    #content .feature-grid-list .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .category-list ul li {
+        width: 100%;
+    }
+    .copyright ul li {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    .copyright .menu-links,
+    .copyright .copyright-text {
+        float: none;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
-    .custom-page h3, .customer-reviews h3 {
+    .custom-page h3,
+    .customer-reviews h3 {
         font-size: 30px;
     }
-    #hero .slideshow .next img, #hero .slideshow .prev img {
+    #hero .slideshow .next img,
+    #hero .slideshow .prev img {
         display: none
     }
     #hero .slideshow .slide .outer {
