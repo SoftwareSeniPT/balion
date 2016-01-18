@@ -731,6 +731,17 @@ header {
     text-transform: uppercase;
     border: 1px solid #E7E7E7;
     border-top: 0;
+    overflow: hidden;
+}
+
+#content .grid-villas .text > .btn {
+    width: 40%;
+    font-size: 12px;
+    padding: 1px 0;
+    text-align: center;
+    height: 23px;
+    float: right;
+    
 }
 
 #content.home .features,
@@ -738,6 +749,7 @@ header {
     margin-left: -2px;
     margin-right: -2px;
     width: 60%;
+    float: left;
 }
 
 #content.home .features li,
@@ -1241,8 +1253,8 @@ footer a {
 }
 
 footer .outer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer .iframe-wrapper {
@@ -1273,14 +1285,27 @@ footer .iframe-wrapper iframe {
 .category-list ul {
     list-style: none;
     overflow: hidden;
+    text-align: center;
+    line-height: 1;
+    margin: 2px 0;
 }
 .category-list ul li {
-    width: 25%;
-    float: left;
     text-align: center;
     text-transform: uppercase;
     font-size: 13px;
-    margin: 3px 0;
+    display: inline-block;;
+}
+
+.category-list ul li:last-child:after {
+    display: none;
+}
+
+.category-list ul li:after {
+    content: "\f111";
+    font-family: "FontAwesome";
+    font-size: 7px;
+    vertical-align: middle;
+    margin: 0px 7px 0 7px;
 }
 
 /* copyright */
