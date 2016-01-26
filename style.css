@@ -3165,7 +3165,8 @@ select {
     margin-bottom: 40px;
 }
 
-.blog .blog-title {
+.blog .blog-title,
+.about .blog-title {
     font-family: 'Gentium Basic', serif;
     font-size: 30px;
     line-height: 1;
@@ -3228,7 +3229,8 @@ select {
     margin-left: 12px;
 }
 
-.blog p {
+.blog p,
+.about p {
     margin: 10px 0;
 }
 
@@ -3339,4 +3341,26 @@ select {
 
 .blog a:hover {
     color: #26AD34;
+}
+
+
+/* About */
+
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+#content.about {
+    padding-bottom: 30px;
+}
+
+.about .author span {
+    font-size: 20px;
+    color: #10771B;
 }
