@@ -14,9 +14,20 @@ var app = {
         app.detailsPageThumbnailReveal();
         app.clndrInit();
         app.reviewSlider();
+        app.blogSidebarHeading();
     },
     onResize: function() {
 
+    },
+    blogSidebarHeading: function() {
+        jQuery('.blog .sidebar .heading span').click(function(){
+            var target = jQuery(this).data('target');
+
+            jQuery('.blog .sidebar .heading span').removeClass('active');
+            jQuery(this).addClass('active');
+            jQuery('.lists .list').hide();
+            jQuery("#" + target).show();
+        });
     },
     owlCarouselInit: function() {
         if(!jQuery('#content').hasClass('details')) {

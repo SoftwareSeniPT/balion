@@ -741,7 +741,6 @@ header {
     text-align: center;
     height: 23px;
     float: right;
-    
 }
 
 #content.home .features,
@@ -1274,14 +1273,16 @@ footer .iframe-wrapper iframe {
 
 .social-links p {
     font-size: 14px;
-
 }
 
+
 /* Category list section */
+
 .category-list {
     background: #152c18;
     padding: 10px 0;
 }
+
 .category-list ul {
     list-style: none;
     overflow: hidden;
@@ -1289,11 +1290,13 @@ footer .iframe-wrapper iframe {
     line-height: 1;
     margin: 2px 0;
 }
+
 .category-list ul li {
     text-align: center;
     text-transform: uppercase;
     font-size: 13px;
-    display: inline-block;;
+    display: inline-block;
+    ;
 }
 
 .category-list ul li:last-child:after {
@@ -1308,6 +1311,7 @@ footer .iframe-wrapper iframe {
     margin: 0px 7px 0 7px;
 }
 
+
 /* copyright */
 
 .copyright .outer {
@@ -1316,10 +1320,11 @@ footer .iframe-wrapper iframe {
     font-size: 14px;
     color: #779A7A;
 }
+
 .copyright a {
     color: #779A7A;
-
 }
+
 .copyright ul {
     list-style: none;
 }
@@ -1336,6 +1341,7 @@ footer .iframe-wrapper iframe {
 .copyright .copyright-text {
     float: right;
 }
+
 
 /* Search page */
 
@@ -3143,11 +3149,194 @@ select {
     width: 10%;
 }
 
-.secure-subtitle {}
-
 #payment-page .payment-details h3 {
     font-size: 28px;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+
+/*
+ * Blog 
+ */
+
+.blog .item {
+    margin-bottom: 40px;
+}
+
+.blog .blog-title {
+    font-family: 'Gentium Basic', serif;
+    font-size: 30px;
+    line-height: 1;
+    border-bottom: 1px solid #152D18;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #152D18;
+}
+
+.blog .content {
+    width: 70%;
+    float: left;
+    padding-right: 30px;
+}
+
+.blog .sidebar {
+    width: 30%;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.blog .outer {
+    overflow: hidden;
+}
+
+.blog .item-title {
+    float: left;
+    font-size: 21px;
+    color: #152D18;
+}
+
+.blog .item-title a {
+    color: #152D18;
+}
+
+.blog .item-meta {
+    float: right;
+    font-size: 14px;
+    color: #797979;
+    padding: 5px 0;
+}
+
+.blog .item-meta a:hover {
+    color: #152D18;
+}
+
+.blog .item-meta a {
+    color: #797979;
+}
+
+.blog .item > img {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.blog .item-meta > i {
+    margin-left: 12px;
+}
+
+.blog p {
+    margin: 10px 0;
+}
+
+.blog .read-more {
+    display: inline-block;
+    border: 1px solid #26ad34;
+    color: #26ad34;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 30px;
+    transition: background 0.3s;
+}
+
+.blog .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog .sidebar .list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.blog .popular-recent-widget {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.blog .lists {
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.blog .heading span {
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 14px 0;
+    font-weight: 700;
+    background: #1d3a20;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.blog .heading .active {
+    background: #fff;
+    color: #333;
+    cursorwait;
+    : cursor: default;
+}
+
+.blog .heading {
+    overflow: hidden;
+}
+
+.blog .sidebar .list li .date {
+    font-size: 13px;
+    color: #A5A5A5;
+}
+
+.blog .sidebar .list li:last-child {
+    border: 0;
+}
+
+.blog .category-widget {
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.blog .category-widget,
+.category-widget a {
+    color: #696969;
+}
+
+.blog .share {
+    margin: 10px 0;
+}
+
+.blog .sidebar .list li .title a {
+    color: #6B6B6B;
+}
+
+.blog .sidebar .list li .title a:hover {
+    color: #292828;
+}
+
+.blog .category-widget .widget-title {
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.blog .category-widget ul {
+    font-size: 15px;
+}
+
+.blog #recent {
+    display: none
+}
+
+.blog .read-more:hover {
+    background: #26ad34;
+    color: #fff;
+}
+
+.blog a:hover {
+    color: #26AD34;
 }

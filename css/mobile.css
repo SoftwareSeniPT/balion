@@ -223,4 +223,18 @@
     .details .details-menu {
         padding: 10px 0;
     }
+    .blog .content,
+    .blog .sidebar {
+        width: 100%;
+    }
+    .blog .content {
+        padding-right: 0;
+    }
+    .blog .item-meta,
+    .blog .item-title {
+        float: none;
+    }
+    .blog .item-meta i:first-child {
+        margin: 0;
+    }
 }
