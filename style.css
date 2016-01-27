@@ -1,5 +1,4 @@
 * {
-    -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
@@ -3195,7 +3194,6 @@ select {
 }
 
 .blog .item-title {
-    float: left;
     font-size: 21px;
     color: #152D18;
 }
@@ -3205,7 +3203,6 @@ select {
 }
 
 .blog .item-meta {
-    float: right;
     font-size: 14px;
     color: #797979;
     padding: 5px 0;
@@ -3227,6 +3224,10 @@ select {
 
 .blog .item-meta > i {
     margin-left: 12px;
+}
+
+.blog .item-meta > i:first-child {
+    margin: 0;
 }
 
 .blog p,
