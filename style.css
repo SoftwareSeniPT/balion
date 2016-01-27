@@ -900,7 +900,7 @@ header {
 
 #content .feature-grid-list {
     background: #fff;
-    padding: 50px 0;
+    padding: 40px 0;
     color: #6B6B6B;
     border-top: 1px solid #ddd;
 }
@@ -908,7 +908,16 @@ header {
 #content .feature-grid-list h4 {
     margin-bottom: 0;
     font-weight: 600;
-    color: #379439;
+    color: #1e3a21;
+    text-transform: uppercase;
+    font-size: 14px;;
+}
+
+#content .feature-grid-list h4 i {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
 }
 
 #content .feature-grid-list h4:after {
@@ -917,10 +926,36 @@ header {
 
 #content .feature-grid-list .item {
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     width: 25%;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+#content .feature-grid-list .item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#content .feature-grid-list .item .villa-lists {
+    margin: 15px 0;
+
+}
+
+#content .feature-grid-list .item .villa-lists .title {
+    font-size: 14px;
+
+}
+
+#content .feature-grid-list .item .view-all a {
+    font-size: 16px;
+    color: #169F25;
+    font-weight: bold;
+}
+
+#content .feature-grid-list .item .villa-lists li {
+    margin: 10px 0;
 }
 
 #content .feature-grid-list .item img {
@@ -929,32 +964,8 @@ header {
     object-fit: cover;
     margin: 15px 0;
     vertical-align: top;
-    border-top: 2px solid #379439;
 }
 
-#content .feature-grid-list .item:nth-child(2) h4 {
-    color: #0892ff;
-}
-
-#content .feature-grid-list .item:nth-child(2) img {
-    border-color: #0892ff;
-}
-
-#content .feature-grid-list .item:nth-child(3) h4 {
-    color: #957441;
-}
-
-#content .feature-grid-list .item:nth-child(3) img {
-    border-color: #957441;
-}
-
-#content .feature-grid-list .item:nth-child(4) h4 {
-    color: #cb36ff;
-}
-
-#content .feature-grid-list .item:nth-child(4) img {
-    border-color: #cb36ff;
-}
 
 
 /* Search param */
@@ -3364,4 +3375,19 @@ select {
 .about .author span {
     font-size: 20px;
     color: #10771B;
+}
+
+.item-icon {
+    background: #1e3a21;
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: top;
+    padding: 4px 0;
+    margin-top: -3px;
+    margin-right: 3px;
 }
