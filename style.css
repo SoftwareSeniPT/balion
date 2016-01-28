@@ -930,6 +930,7 @@ header {
     width: 25%;
     padding-left: 15px;
     padding-right: 15px;
+    vertical-align: top;
 }
 
 #content .feature-grid-list .item ul {
