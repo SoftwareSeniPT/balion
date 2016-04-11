@@ -2891,18 +2891,24 @@ ul.quicksearch li.button-book .wpcf7-submit {
     }
 }
 
-.camera-icon {
+.hero-icon {
     position: absolute;
     bottom: 10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.camera-icon, .video-icon {
     z-index: 160;
     background: #fff;
     width: 60px;
     padding: 1px 12px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+    display: inline-block;
 }
 
 .camera-icon:after {
@@ -2920,7 +2926,7 @@ ul.quicksearch li.button-book .wpcf7-submit {
     box-sizing: border-box;
 }
 
-.camera-icon img {
+.camera-icon img, .video-icon img {
     height: 37px;
     vertical-align: top;
 }
